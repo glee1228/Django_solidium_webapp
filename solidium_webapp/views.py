@@ -14,39 +14,108 @@ from django.views.decorators import gzip
 from time import sleep
 import subprocess
 import os
-def main_view(request):
-    return render(request, 'main.html', {})
+from django.views import View
+from django.urls import reverse
+from django.core.exceptions import PermissionDenied
+from .forms import LoginForm,UserForm
+from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth.models import User
+
+class MainView(View):
+    def get(self,request,*args,**kwargs):
+        return render(request,'main.html')
+    def post(self,request,*args,**kwargs):
+        login_succ = "로그인 완료"
+        login_fail = "로그인 실패"
+        logout_succ = "성공적으로 로그아웃되었습니다"
+
+        if request.POST['func']=='login':
+            form = LoginForm(request.POST)
+            username = request.POST['username']
+            password = request.POST['password']
+            print(username,password)
+            user = authenticate(username = username,password=password)
+            print(user)
+
+            if user is not None and user.is_active:
+                login(request, user)
+                return render(request, 'main.html', {'logincheck': login_succ})
+            else :
+                return render(request,'main.html',{'logincheck':login_fail})
+        elif request.POST['func']=='logout':
+            logout(request)
+            return render(request,'main.html',{'logout_succ':logout_succ})
+        elif request.POST['func']=='signup':
+            #print(request.POST['username'],request.POST['email'],request.POST['password'])
+            form = UserForm(request.POST)
+            print(form)
+            if form.is_valid():
+                new_user = User.objects.create_user(**form.cleaned_data)
+                return render(request,'main.html')
+            else :
+                return render(request,'main.html')
+        else:
+            return render(request,'main.html')
+class StartView(View):
+
+    def get(self,request,*args,**kwargs):
+        request.session['start_complete']=False
+        request.session['run_complete']=False
+        request.session['stream_complete']=False
+        return render(request,'start.html')
+
+    def post(self,request,*args,**kwargs):
+        request.session['start_complete']=True
+        return redirect(reverse('run'))
+
+class RunView(View):
+
+    def get(self,request,*args,**kwargs):
+        if not request.session.get('start_complete',False):
+            raise PermissionDenied
+        request.session['start_complete']=False
+
+        my_env = {**os.environ, 'PATH': '/usr/sbin:/sbin:' + os.environ['PATH']}
+        # print(my_env)
+        ear_script_path = "./solidium_webapp/ear_app/ear_test_change.py"
+
+        proc = subprocess.Popen(['python3', ear_script_path], stdout=subprocess.PIPE, env=my_env)
+        result = []
+        while proc.poll() is None:
+            output = proc.stdout.readline()
+            result.append((output).decode())
+
+        return render(request,'run.html',{'result':result})
+
+    def post(self,request,*args,**kwargs):
+        request.session['run_complete']=True
+        return redirect(reverse('stream'))
 
 
-def uimage(request):
-    if request.method == 'POST':
-        form = UploadImageForm(request.POST, request.FILES)  # 이미지 업로드 폼
-        if form.is_valid():
-            myfile = request.FILES['image']
-            fs = FileSystemStorage()  # 이미지 저장 함수
-            filename = fs.save(myfile.name, myfile)
-            uploaded_file_url = fs.url(filename)
-            return render(request, 'uimage.html',
-                      {'form': form, 'uploaded_file_url': uploaded_file_url})
-    else:
-        form = UploadImageForm()
-        return render(request, 'uimage.html',
-                      {'form': form})
+class StreamView(View):
+    def get(self,request,*args,**kwargs):
+        #if not request.session.get('run_complete',False):
+        #    raise PermissionDenied
+        request.session['run_complete']=False
+        streaming(request)
+        return render(request,'stream.html')
 
-def dface(request):
-    if request.method == 'POST':
-        form = ImageUploadForm(request.POST, request.FILES)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.save()
+    def post(self,request,*args,**kwargs):
+        request.session['stream_complete']=True
+        return redirect(reverse('result'))
 
-            imageURL = settings.MEDIA_URL + form.instance.document.name
-            opencv_dface(settings.MEDIA_ROOT_URL + imageURL)
+class ResultView(View):
 
-            return render(request, 'dface.html', {'form': form, 'post': post})
-    else:
-        form = ImageUploadForm()
-    return render(request, 'dface.html', {'form': form})
+    def get(self,request,*args,**kwargs):
+        #if not request.session.get('stream_complete',False):
+        #    raise PermissionDenied
+        request.session['stream_complete']=False
+        return render(request,'result.html')
+
+class UserView(View):
+    def get(self,request,*args,**kwargs):
+        request.session['stream_complete']=False
+        return render(request,'user.html')
 
 def gen(camera):
     while True:
@@ -57,8 +126,6 @@ def gen(camera):
 class VideoCamera(object):
     def __init__(self,path):
         self.video = cv2.VideoCapture(path)
-        #self.face_cascade = face
-        #self.eye_cascade = eye
 
     def __del__(self):
         self.video.release()
@@ -70,47 +137,91 @@ class VideoCamera(object):
         sleep(0.07)
         return jpeg.tobytes()
 
-def video_feed(request):
-    return HttpResponse(gen(VideoCamera()),
-                    content_type='multipart/x-mixed-replace; boundary=frame')
-
-
-def indexscreen(request):
-    try:
-        template = "screens.html"
-        return render(request, template)
-    except HttpResponseServerError:
-        print("aborted")
-
-def run(request):
-    if request.method == 'POST':
-        form = ScriptForm(request.POST)
-        #print(form)
-        if form.is_valid():
-
-            my_env = {**os.environ, 'PATH': '/usr/sbin:/sbin:' + os.environ['PATH']}
-            #print(my_env)
-            ear_script_path = "./solidium_webapp/ear_app/ear_test_change.py"
-
-            proc = subprocess.Popen(['python3',ear_script_path],stdout=subprocess.PIPE,env=my_env)
-            result=[]
-            while proc.poll() is None:
-                output = proc.stdout.readline()
-                result.append((output).decode())
-            #output = result.communicate()[0]
-            #print(output)
-            return render(request,"run.html",{'result':result })
-
-    else:
-        form = ScriptForm()
-    return render(request, 'run.html', {'form': form})
-
 
 @gzip.gzip_page
-def stream(request, num=0, stream_path="172.0.0.1"):
+def streaming(request):
     stream_path = './media/video/123.mp4'
-    return StreamingHttpResponse(gen(VideoCamera(stream_path)), content_type="multipart/x-mixed-replace;boundary=frame")
+    return StreamingHttpResponse(gen(VideoCamera(stream_path)),
+                                 content_type="multipart/x-mixed-replace;boundary=frame")
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def run(request):
+#
+#     #print(form)
+#     if request.method=='GET':
+#          #if request.POST['value']=='authentication':
+#
+#             my_env = {**os.environ, 'PATH': '/usr/sbin:/sbin:' + os.environ['PATH']}
+#             #print(my_env)
+#             ear_script_path = "./solidium_webapp/ear_app/ear_test_change.py"
+#
+#             proc = subprocess.Popen(['python3',ear_script_path],stdout=subprocess.PIPE,env=my_env)
+#             result=[]
+#             while proc.poll() is None:
+#                 output = proc.stdout.readline()
+#                 result.append((output).decode())
+#             #output = result.communicate()[0]
+#             print(result[2])
+#             return render(request, "run.html", {'result':result})
+#
+#          #else:
+#          #   return render(request, 'run.html')
+#     else:
+#         return render(request,'run.html')
+#
+
+
+
+#def result(request):
+#    if request.method=='POST':
+
+# def uimage(request):
+#     if request.method == 'POST':
+#         form = UploadImageForm(request.POST, request.FILES)  # 이미지 업로드 폼
+#         if form.is_valid():
+#             myfile = request.FILES['image']
+#             fs = FileSystemStorage()  # 이미지 저장 함수
+#             filename = fs.save(myfile.name, myfile)
+#             uploaded_file_url = fs.url(filename)
+#             return render(request, 'uimage.html',
+#                       {'form': form, 'uploaded_file_url': uploaded_file_url})
+#     else:
+#         form = UploadImageForm()
+#         return render(request, 'uimage.html',
+#                       {'form': form})
+#
+# def dface(request):
+#     if request.method == 'POST':
+#         form = ImageUploadForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             post = form.save(commit=False)
+#             post.save()
+#
+#             imageURL = settings.MEDIA_URL + form.instance.document.name
+#             opencv_dface(settings.MEDIA_ROOT_URL + imageURL)
+#
+#             return render(request, 'dface.html', {'form': form, 'post': post})
+#     else:
+#         form = ImageUploadForm()
+#     return render(request, 'dface.html', {'form': form})
 
 

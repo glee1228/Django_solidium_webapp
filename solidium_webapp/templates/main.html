@@ -66,15 +66,40 @@
         </ul>
       </div>
 
-      <div class="collapse navbar-collapse navbar-collapse-2">
-        <ul class="navbar-nav ml-auto justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" data-target="#LoginModal">Log In</a>
-          </li>
-        </ul>
+
+        {% if user.is_active %}
+
+                <div class="collapse navbar-collapse navbar-collapse-2">
+                <ul class="navbar-nav ml-auto justify-content-end">
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-item">Welcome, <font color="red">{{ user.username }} 님!</font></a>
+                    </li>
+                </ul>
+                </div>
+            <form method="POST" action="{% url 'main'%}" >
+            <input type="hidden" name="func" value="logout">
+            {% csrf_token %}
+                <div class="col-md-3">
+            <button type="submit" class="btn ml-md-3" >log out</button>
+                </div>
+            </form>
+
+            {%else%}
+            <div class="collapse navbar-collapse navbar-collapse-2">
+                <ul class="navbar-nav ml-auto justify-content-end">
+                <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#LoginModal">Log In</a>
+                </li>
+                </ul>
 
         <a class="btn ml-md-3" data-toggle="modal" data-target="#RegisterModal">Register</a>
       </div>
+        {%endif%}
+
+
     </nav>
   </div>
 </header>
@@ -127,6 +152,26 @@ $(window).on('beforeunload', function(){
 </script>
 -->
 <!-- /새로고침,나가기 감지 -->
+
+
+
+
+
+<!-- 로그인 알람 -->
+
+{% if logincheck %}
+<script type="text/javascript">
+alert("{{ logincheck }}")
+</script>
+{%endif%}
+
+<!-- 로그아웃 알람 -->
+{% if logout_succ %}
+<script type="text/javascript">
+alert("{{ logout_succ }}")
+</script>
+{%endif%}
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -174,22 +219,26 @@ $(window).on('beforeunload', function(){
               <h1>Log In</h1>
             </div>
           </div>
+             <form method="post" action="{% url 'main'%}" >
+                 {% csrf_token %}
           <div class="row mt-4">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Email">
+              <input type="text" class="form-control" name="username" placeholder="username">
             </div>
           </div>
           <div class="row mt-4">
             <div class="col">
-              <input type="password" class="form-control mb-1" placeholder="Password">
+              <input type="password" class="form-control mb-1" name="password" placeholder="password">
               <p class="text-right"><a href="https://www.froala.com">Recover Password</a></p>
             </div>
           </div>
           <div class="row mt-4">
             <div class="col">
-              <button class="btn" type="button">Submit</button>
+                <input type="hidden" name="func" value="login">
+              <button class="btn" type="submit">Submit</button>
             </div>
           </div>
+             </form>
         </div>
       </div>
     </div>
@@ -221,19 +270,17 @@ $(window).on('beforeunload', function(){
             <p class="text-h3">Register and recognize your own walking steps and ears.</p>
           </div>
         </div>
-        <div class="row align-items-center">
-          <div class="col mt-4">
-            <input type="email" class="form-control" placeholder="Email">
+          <form method="post" action="{% url 'main'%}" >
+              {% csrf_token %}
+
+        <div class="row align-items-center mt-4">
+          <div class="col">
+            <input type="text" class="form-control" name="username" placeholder="username">
           </div>
         </div>
         <div class="row align-items-center mt-4">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Name">
-          </div>
-        </div>
-        <div class="row align-items-center mt-4">
-          <div class="col">
-            <input type="password" class="form-control" placeholder="Password">
+            <input type="password" class="form-control" name="password" placeholder="password">
           </div>
         </div>
         <div class="row align-items-center mt-4">
@@ -249,10 +296,11 @@ $(window).on('beforeunload', function(){
                   I Read and Accept <a href="https://www.froala.com">Terms and Conditions</a>
                 </label>
             </div>
-            <button class="btn mt-4">Submit</button>
-            
+                             <input type="hidden" name="func" value="signup">
+            <button class="btn mt-4" type="submit">Submit</button>
           </div>
         </div>
+          </form>
       </div>
     </div>
   </div>
@@ -282,7 +330,7 @@ It recognizes the identity of a person who is registered only by gait and ears, 
         <div class="col-12 col-md-8 col-lg-5 text-center pb-md-5">
           <h1>걸음걸이와 귀를 등록하고 테스트해보세요.</h1>
           <p class="text-h3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-          <p class="mt-4"><a href="http://localhost:8009/run/" class="btn">바로가기</a></p>
+          <p class="mt-4"><a href="http://localhost:8009/start/" class="btn">바로가기</a></p>
         </div>
       </div>
 

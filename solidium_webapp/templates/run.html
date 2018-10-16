@@ -8,20 +8,21 @@
 <div class="row justify-content-center">
 
         <div class="col-12 col-md-8 col-lg-5 text-center pb-md-5">
-          <h1>걸음걸이와 귀를 등록하고 테스트해보세요.</h1>
-          <p class="text-h3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+
+<h1>Step2</h1>
+        <form action="/run/", method="POST">
+        {% csrf_token %}
+        <input type="submit" value="다음">
+        </form>
+{% if result %}
+    <p>인증 여부확인<br>
+        (로그인한 계정의 이름과 동일한 결과로 인증되었을 경우 : 인증되었습니다.메세지 /<br>
+        인증되지 않았을 경우 : 인증되지 않았습니다. 홈으로 돌아갑니다.메세지 : {{ result }}</p>
+{% endif %}
 
 
-              <form method="POST" class="post-form" enctype="multipart/form-data">
-                {%  csrf_token %}
-                  {{  form.as_p }}
-                  <button type="submit" class="save btn btn-default"
-            value="upload">save!!</button>
-            </form>
-            {% if result %}
-            <p>Result :
-             {{ result }}</p>
-            {% endif %}
+
+
 
         </div>
       </div>

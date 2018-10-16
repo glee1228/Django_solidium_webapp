@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<h1>Step1</h1>
+<script type="text/javascript">
+    function init(){
+        setTimeout("move()",1000);
+    }
+    function move(){
+        document.getElementById("startform").action="./";
+        document.getElementById("startform").submit();
+    }
+
+</script>
+<body onload="init()">
+<form id="startform" , method="POST">
+  {% csrf_token %}
+  <input type="submit" value="다음">
+</form>
+{% load static %}
+
+<p style="text-align:center;">
+<img alt="image" src="{% static "img/loadinglogo.gif" %}"  height="500" width="500" >
+<br><br><br><br>
+<img alt="image" src="{% static "img/walkingloading01.gif" %}"  height="400" width="250" >
+<img alt="image" src="{% static "img/walkingloading15.gif" %}"  height="400" width="250">
+<img alt="image" src="{% static "img/walkingloading02.gif" %}"  height="380" width="280">
+<img alt="image" src="{% static "img/walkingloading09.gif" %}"  height="370" width="250">
+<img alt="image" src="{% static "img/walkingloading16.gif" %}"  height="450" width="300">
+<img alt="image" src="{% static "img/walkingloading14.gif" %}"  height="400" width="200">
+
+</body>
+</html>

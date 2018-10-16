@@ -16,6 +16,7 @@
 ./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0031.jpg.png
 ./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0030.jpg.png
 ./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0020.jpg.png
+./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0042.jpg.png
 ./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0016.jpg.png
 ./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0006.jpg.png
 ./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0029.jpg.png
