@@ -133,4 +133,5 @@ MEDIA_ROOT_URL ='.'
 APP_URL = './solidium_webapp/'
 
 EAR_URL = './solidium_webapp/ear_app/'
-
+SOUND_URL = './solidium_webapp/sound/'
+EAR_IMAGE_ROOT = os.path.join(BASE_DIR,"solidium_webapp/ear_app/Ear_image")

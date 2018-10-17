@@ -1,38 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/1.0.2/css/froala_blocks.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
-
-
-<h1>Step1</h1>
-<script type="text/javascript">
-    function init(){
-        setTimeout("move()",1000);
-    }
-    function move(){
-        document.getElementById("startform").action="./";
-        document.getElementById("startform").submit();
-    }
-
-</script>
-<body onload="init()">
-<form id="startform" , method="POST">
-  {% csrf_token %}
-  <input type="submit" value="다음">
-</form>
+<body>
 {% load static %}
+<section class="fdb-block fp-active" style=" padding-top:50px; padding-bottom: 30px;" data-block-type="contents" data-id="4" draggable="true">
+    <div class="container">
+    <nav class="navbar">
+      <a href="localhost:8009/#home">
+          <img src="{% static "img/logo3.png" %}" height="50" alt="image">
+        </a>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Step1</h1>
+        <form id="submitform" , method="POST">
+        {% csrf_token %}
+            <button class="btn" type="submit">인증 시작</button>
+        </form>
+        <img alt="image" class="img-fluid mt-5" src="https://com-ptboard-school-images-public.s3.amazonaws.com/38cb547f-c3bb-4298-8659-24edc862aaea/e3ee66b1-e4a7-4302-aca2-492b9a5f4867">
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="fdb-block footer-small" data-block-type="footers" data-id="5">
+  <div class="container">
+    <div class="row text-center align-items-center">
+      <div class="col-12 col-sm-6 col-md-4 text-sm-left">
+        <img alt="image" src="{% static "img/logo3.png" %}" height="30">
+      </div>
 
-<p style="text-align:center;">
-<img alt="image" src="{% static "img/loadinglogo.gif" %}"  height="500" width="500" >
-<br><br><br><br>
-<img alt="image" src="{% static "img/walkingloading01.gif" %}"  height="400" width="250" >
-<img alt="image" src="{% static "img/walkingloading15.gif" %}"  height="400" width="250">
-<img alt="image" src="{% static "img/walkingloading02.gif" %}"  height="380" width="280">
-<img alt="image" src="{% static "img/walkingloading09.gif" %}"  height="370" width="250">
-<img alt="image" src="{% static "img/walkingloading16.gif" %}"  height="450" width="300">
-<img alt="image" src="{% static "img/walkingloading14.gif" %}"  height="400" width="200">
+      <div class="col-12 col-sm-6 col-md-4 mt-4 mt-sm-0 text-center text-sm-right text-md-center">
+        © 2018 Solidium#2
+      </div>
+
+      <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">
+        <a href="https://www.froala.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+        <a href="https://www.froala.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;
+        <a href="https://www.froala.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;
+        <a href="https://www.froala.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>&nbsp;&nbsp;
+        <a href="https://www.froala.com"><i class="fa fa-google" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
+
+

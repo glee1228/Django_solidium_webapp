@@ -78,11 +78,11 @@ while(True):
 
     for (x, y, w, h) in left_ear:
         l_ear_path=settings.EAR_URL+"Ear_image/Test/Before_preprocess/%04d.jpg"%l_ear_num
-        a = x + 32
+        a = x + 18
         #a = x -5
         b = y + 10
         #b = y -5
-        c = x + w -30
+        c = x + w -20
         d = y + h - 6
         cv2.rectangle(frame, (a, b), (c, d), (0, 255, 0), 1)
         crop_left_ear = frame[(b+2): (d-2), (a+2):(c-2)]

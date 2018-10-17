@@ -8,11 +8,13 @@ from django.conf import settings
 from .opencv_dface import opencv_dface
 # Create your views here.
 import cv2
+import ast
 from django.http import HttpResponse,StreamingHttpResponse, HttpResponseServerError
 import numpy as np
 from django.views.decorators import gzip
 from time import sleep
 import subprocess
+from subprocess import call
 import os
 from django.views import View
 from django.urls import reverse
@@ -20,6 +22,8 @@ from django.core.exceptions import PermissionDenied
 from .forms import LoginForm,UserForm
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
+import glob
+import shutil
 
 class MainView(View):
     def get(self,request,*args,**kwargs):
@@ -66,30 +70,61 @@ class StartView(View):
 
     def post(self,request,*args,**kwargs):
         request.session['start_complete']=True
+        after_pre=settings.EAR_IMAGE_ROOT+"/Test/After_preprocess/"
+        before_pre=settings.EAR_IMAGE_ROOT+"/Test/Before_preprocess/"
+        after_resize=settings.EAR_IMAGE_ROOT+"/Test/Before_preprocess/After_resize_pixel/"
+        empty_directory(after_pre)
+        empty_directory(before_pre)
+        empty_directory(after_resize)
+        make_directory(before_pre,"After_resize_pixel")
+        #print(os.path.join(after_resize, '*'))
+        #print(after_resize)
         return redirect(reverse('run'))
 
 class RunView(View):
 
     def get(self,request,*args,**kwargs):
-        if not request.session.get('start_complete',False):
-            raise PermissionDenied
+        #if not request.session.get('start_complete',False):
+        #    raise PermissionDenied
         request.session['start_complete']=False
-
-        my_env = {**os.environ, 'PATH': '/usr/sbin:/sbin:' + os.environ['PATH']}
+        my_env = { **os.environ, 'PATH': '/usr/sbin:/sbin:' + os.environ['PATH']}
         # print(my_env)
+        sound_script_path = "./solidium_webapp/sound/Papago.mpeg"
         ear_script_path = "./solidium_webapp/ear_app/ear_test_change.py"
-
+        call(["mplayer",sound_script_path])
         proc = subprocess.Popen(['python3', ear_script_path], stdout=subprocess.PIPE, env=my_env)
         result = []
         while proc.poll() is None:
             output = proc.stdout.readline()
             result.append((output).decode())
+        oldstr = result[2]
+        newstr = oldstr.replace("\n", "")
+        print("예측 횟수 : "+ newstr)
+        dic = ast.literal_eval(newstr)
+        dic_max = max(dic.values())
+        predict =""
+        for key,value in dic.items():
+            if dic_max==value:
+                predict=key
+        print("예측한 사람 : "+predict)
+        print("로그인된 정보 : "+str(request.user))
+        if predict==str(request.user):
+            Authentication="Authentication"
+            return render(request, 'run.html', {'predict': predict, 'newstr': newstr, 'Authentication': Authentication})
+        else:
+            unauthorized = "unauthorized"
+            return render(request, 'run.html', {'predict': predict, 'newstr': newstr, 'unauthorized': unauthorized})
 
-        return render(request,'run.html',{'result':result})
+
 
     def post(self,request,*args,**kwargs):
-        request.session['run_complete']=True
-        return redirect(reverse('stream'))
+        if request.POST['auth']=='fail':
+            return redirect(reverse('main'))
+        elif request.POST['auth']=='succ':
+            request.session['run_complete']=True
+            return redirect(reverse('stream'))
+        else :
+            return redirect(reverse('main'))
 
 
 class StreamView(View):
@@ -144,9 +179,18 @@ def streaming(request):
     return StreamingHttpResponse(gen(VideoCamera(stream_path)),
                                  content_type="multipart/x-mixed-replace;boundary=frame")
 
+def remove_thing(path):
+    if os.path.isdir(path):
+        shutil.rmtree(path)
+    else:
+        os.remove(path)
 
+def empty_directory(path):
+    for i in glob.glob(os.path.join(path, '*')):
+        remove_thing(i)
 
-
+def make_directory(path,name):
+    os.mkdir(path+name)
 
 
 

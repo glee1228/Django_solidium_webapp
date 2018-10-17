@@ -1,31 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/1.0.2/css/froala_blocks.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<script type="text/javascript">
+    function init(){
+        setTimeout("move()",5000);
+    }
+    function move(){
+        document.getElementById("submitform").action="./";
+        document.getElementById("submitform").submit();
+    }
+
+</script>
+<script>
+$(document).ajaxStart(function(){
+    $('#loading').show();
+ }).ajaxStop(function(){
+    $('#loading').hide();
+ });
+</script>
 </head>
-<body>
-<div class="row justify-content-center">
-
-        <div class="col-12 col-md-8 col-lg-5 text-center pb-md-5">
-
-<h1>Step2</h1>
-        <form action="/run/", method="POST">
+<body onload="init()">
+<section class="fdb-block fp-active" data-block-type="contents" data-id="29" draggable="true">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8 col-xl-6 text-center">
+        <img alt="image" width="200" src="https://g.redditmedia.com/cZSQS6pKfOJa7hOwvGpP2Fg_cMrTKXEVrri9_N78AmA.gif?fm=mp4&mp4-fragmented=false&s=31b402d6703c4b7ac0d90f7457cc6d59">
+          {% if Authentication %}
+            <p class="text-h3">인증 성공<br></p>
+            <h5>잠시 후 결과 화면으로 이동합니다.</h5>
+            <p class="text-h4">로그인 계정과 사용자 보행,귀 인식 정보가 일치 합니다.</p>
+            {% endif %}
+          {% if unauthorized %}
+            <p>인증 실패<br></p>
+            <h5>잠시 후 홈 화면으로 이동합니다.</h5>
+            <p class="text-h5">로그인 계정과 사용자 보행,귀 인식 정보가 일치 하지 않습니다.</p>
+            {% endif %}
+        {% if Authentication %}
+        <form id="submitform" , method="POST">
         {% csrf_token %}
-        <input type="submit" value="다음">
+            <input type="hidden" name="auth" value="succ">
+        <p class="text-h3 mt-5"><button class="btn btn-round" type="submit"> Next </button></p>
         </form>
-{% if result %}
-    <p>인증 여부확인<br>
-        (로그인한 계정의 이름과 동일한 결과로 인증되었을 경우 : 인증되었습니다.메세지 /<br>
-        인증되지 않았을 경우 : 인증되지 않았습니다. 홈으로 돌아갑니다.메세지 : {{ result }}</p>
-{% endif %}
-
-
-
-
-
-        </div>
+      {% endif %}
+      {% if unauthorized %}
+        <form id="submitform" , method="POST">
+        {% csrf_token %}
+            <input type="hidden" name="auth" value="fail">
+        <p class="text-h3 mt-5"><button class="btn btn-round" type="submit"> Home </button></p>
+        </form>
+      {% endif %}
       </div>
+    </div>
+  </div>
+</section>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
+
+
+
+
+
+

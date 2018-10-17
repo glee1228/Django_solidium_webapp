@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fa7534-94dd-4ba0-a3da-46f396c86083" name="Default Changelist" comment="uploadImage page : /">
-      <change afterPath="$PROJECT_DIR$/solidium_webapp/templates/start.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/sound/Papago.mpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/media/video/123.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/media/video/123.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_site/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_detecter.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_detecter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_test_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_test_dataset.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_app/Test_Data/Ear_test_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_app/Test_Data/Ear_test_data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/dface.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/run.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/screens.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/stream.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/uimage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/stream.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/stream.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,12 +60,12 @@
         <counts>
           <entry key="JPG" value="5" />
           <entry key="csv" value="6" />
-          <entry key="gitignore" value="3" />
-          <entry key="html" value="71" />
+          <entry key="gitignore" value="4" />
+          <entry key="html" value="76" />
           <entry key="jpg" value="25" />
           <entry key="js" value="2" />
           <entry key="png" value="5" />
-          <entry key="py" value="158" />
+          <entry key="py" value="167" />
           <entry key="svg" value="1" />
           <entry key="txt" value="4" />
         </counts>
@@ -76,11 +73,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="3" />
-          <entry key="HTML" value="71" />
+          <entry key="HTML" value="76" />
           <entry key="Image" value="35" />
           <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="158" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="Python" value="167" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
@@ -88,8 +85,8 @@
         <counts>
           <entry key="csv" value="1" />
           <entry key="dummy" value="11" />
-          <entry key="html" value="2186" />
-          <entry key="py" value="9894" />
+          <entry key="html" value="3162" />
+          <entry key="py" value="11709" />
           <entry key="py@Django_solidium_webapp" value="54" />
           <entry key="txt" value="103" />
         </counts>
@@ -98,27 +95,54 @@
         <counts>
           <entry key="CSV" value="1" />
           <entry key="CommandLine" value="8" />
-          <entry key="HTML" value="2186" />
+          <entry key="HTML" value="3162" />
           <entry key="PLAIN_TEXT" value="160" />
-          <entry key="Python" value="9894" />
+          <entry key="Python" value="11709" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/solidium_webapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+            <state relative-caret-position="234">
+              <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1539711571343" expanded="true" signature="854:902" ph="..." />
-                <marker date="1539711571343" expanded="true" signature="3491:3496" ph="..." />
-                <marker date="1539711571343" expanded="true" signature="3906:4143" ph="..." />
-                <marker date="1539711571343" expanded="true" signature="4164:4300" ph="..." />
-                <marker date="1539711571343" expanded="true" signature="5088:5089" ph="..." />
+                <marker date="1539785689984" expanded="true" signature="919:967" ph="..." />
+                <marker date="1539785689984" expanded="true" signature="5029:5034" ph="..." />
+                <marker date="1539785689984" expanded="true" signature="5444:5681" ph="..." />
+                <marker date="1539785689984" expanded="true" signature="5702:5838" ph="..." />
+                <marker date="1539785689984" expanded="true" signature="6853:6895" ph="..." />
+                <marker date="1539785689984" expanded="true" signature="6894:6895" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solidium_site/urls.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solidium_site/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="136" column="56" selection-start-line="136" selection-start-column="56" selection-end-line="136" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Ear_detecter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1305">
+              <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+              <folding>
+                <element signature="e#48#58#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,8 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solidium_webapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+            <state relative-caret-position="135">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -137,71 +161,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_webapp/forms.py">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/h5py/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-                <marker date="1539703284233" expanded="true" signature="293:294" ph="..." />
-                <marker date="1539703284233" expanded="true" signature="293:298" ph="..." />
-              </folding>
+            <state relative-caret-position="139">
+              <caret line="29" column="84" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/result.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_webapp/static/img/sidebar-4.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_webapp/static/img/sidebar-2.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_webapp/static/img/sidebar-1.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/start.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="435">
+              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#1847#1853#0#HTML" expanded="true" />
+                <element signature="e#1853#1859#0#HTML" expanded="true" />
+                <element signature="e#1954#1960#0#HTML" expanded="true" />
+                <element signature="e#1960#1966#0#HTML" expanded="true" />
+                <element signature="e#2062#2068#0#HTML" expanded="true" />
+                <element signature="e#2068#2074#0#HTML" expanded="true" />
+                <element signature="e#2170#2176#0#HTML" expanded="true" />
+                <element signature="e#2176#2182#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/run.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/stream.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -216,17 +224,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\{\% if post \%\}\n                \&lt;img src\=\&quot;\{\{ post\.result \}\}\&quot;\&gt;\n                \&lt;p\&gt;File uploaded at\: \&lt;a href\=\&quot;\{\{ post\.result \}\}\&quot;\&gt;\{\{ post\.result \}\}\&lt;\/a\&gt;\&lt;\/p\&gt;\n                \{\% endif \%\}</find>
-      <find>\&lt;\!DOCTYPE html\&gt;\n\&lt;html lang\=\&quot;en\&quot;\&gt;\n\&lt;head\&gt;\n    \&lt;meta charset\=\&quot;UTF\-8\&quot;\&gt;\n    \&lt;title\&gt;Title\&lt;\/title\&gt;\n\&lt;\/head\&gt;\n\&lt;body\&gt;\n\&lt;div class\=\&quot;row justify\-content\-center\&quot;\&gt;\n\n        \&lt;div class\=\&quot;col\-12 col\-md\-8 col\-lg\-5 text\-center pb\-md\-5\&quot;\&gt;\n\n\&lt;h1\&gt;Step2\&lt;\/h1\&gt;\n\n\&lt;form action\=\&quot;\/step2\/\&quot;\, method\=\&quot;POST\&quot;\&gt;\n  \{\% csrf_token \%\}\n  \&lt;input type\=\&quot;submit\&quot; value\=\&quot;다음\&quot;\&gt;\n\&lt;\/form\&gt;\n\n\n\n                  \&lt;button type\=\&quot;submit\&quot; class\=\&quot;save btn btn\-default\&quot;\n            value\=\&quot;authentication\&quot;\&gt;인증 시작\&lt;\/button\&gt;\n\n\n            \{\% if result \%\}\n            \&lt;h3\&gt;\&lt;a href\=\&quot;\{\% url \'stream\'  \%\}\&quot;\&gt;결과보기\&lt;\/a\&gt;\&lt;\/h3\&gt;\n\n            \{\% endif \%\}\n\n\n        \&lt;\/div\&gt;\n      \&lt;\/div\&gt;\n\n\&lt;\/body\&gt;\n\&lt;\/html\&gt;</find>
-      <find>run</find>
-      <find>start</find>
-      <find>login</find>
-      <find>script</find>
       <find>8009</find>
       <find>register</find>
       <find>form action</find>
       <find>action</find>
-      <find>hidden</find>
       <find>username</find>
       <find>email</find>
       <find>button</find>
@@ -245,7 +246,14 @@
       <find>User</find>
       <find>purple</find>
       <find>solidi</find>
+      <find>fl</find>
       <find>log out</find>
+      <find>logo3</find>
+      <find>welcom</find>
+      <find>form</find>
+      <find>hidden</find>
+      <find>request.POST</find>
+      <find>os.path</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -267,22 +275,25 @@
         <option value="$PROJECT_DIR$/solidium_webapp/testmp4.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/ear_app/ear_change.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/ear_app/create_data.py" />
-        <option value="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_detecter.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/ear_app/ear_test_change.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_test_dataset.csv" />
         <option value="$PROJECT_DIR$/solidium_webapp/ear_app/Test_Data/Ear_test_data.txt" />
-        <option value="$PROJECT_DIR$/solidium_webapp/templates/run.html" />
-        <option value="$PROJECT_DIR$/solidium_webapp/templates/stream.html" />
         <option value="$PROJECT_DIR$/solidium_webapp/forms.py" />
-        <option value="$PROJECT_DIR$/solidium_webapp/templates/main.html" />
-        <option value="$PROJECT_DIR$/solidium_site/settings.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/templates/typography.html" />
         <option value="$PROJECT_DIR$/solidium_webapp/templates/table.html" />
-        <option value="$PROJECT_DIR$/solidium_webapp/views.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/urls.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/templates/result.html" />
         <option value="$PROJECT_DIR$/solidium_webapp/templates/user.html" />
+        <option value="$PROJECT_DIR$/solidium_webapp/templates/stream.html" />
+        <option value="$PROJECT_DIR$/solidium_webapp/templates/ajaxtest.html" />
+        <option value="$PROJECT_DIR$/solidium_webapp/templates/start 복사본.html" />
+        <option value="$PROJECT_DIR$/solidium_webapp/sound/voice.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/templates/start.html" />
+        <option value="$PROJECT_DIR$/solidium_webapp/templates/main.html" />
+        <option value="$PROJECT_DIR$/solidium_webapp/templates/run.html" />
+        <option value="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_detecter.py" />
+        <option value="$PROJECT_DIR$/solidium_site/settings.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/views.py" />
       </list>
     </option>
   </component>
@@ -293,9 +304,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="435" />
+    <option name="x" value="571" />
     <option name="y" value="26" />
-    <option name="width" value="1191" />
+    <option name="width" value="1055" />
     <option name="height" value="947" />
   </component>
   <component name="ProjectView">
@@ -325,7 +336,22 @@
               <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_solidium_webapp" type="462c0819:PsiDirectoryNode" />
               <item name="solidium_webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="ear_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_solidium_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="solidium_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ear_app" type="462c0819:PsiDirectoryNode" />
+              <item name="Ear_image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_solidium_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="solidium_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ear_app" type="462c0819:PsiDirectoryNode" />
+              <item name="Ear_image" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
@@ -349,6 +375,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/solidium_webapp/sound" />
       <recent name="$PROJECT_DIR$/solidium_webapp/templates" />
     </key>
   </component>
@@ -465,10 +492,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="435" y="26" width="1191" height="947" extended-state="0" />
+    <frame x="571" y="26" width="1055" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19147085" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2171767" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="manage.py@Django_solidium_webapp" weight="0.32932693" />
@@ -495,6 +522,34 @@
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.32860345" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19147085" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="manage.py@Django_solidium_webapp" order="0" weight="0.32932693" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="1" weight="0.32932693" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32932693" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4982538" visible="true" weight="0.24759616" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39903846" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32932693" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4982538" weight="0.32572114" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32932693" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50174624" side_tool="true" weight="0.32932693" />
+      <window_info anchor="right" x="0" y="0" width="295" height="747" id="Documentation" order="0" side_tool="true" weight="0.32935026" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="R Graphics" order="5" />
+      <window_info anchor="right" id="R Packages" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32860345" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -518,23 +573,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Ear_Result.txt" />
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Ear_image/Test/Before_preprocess/0001.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/client/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12825">
-          <caret line="876" selection-start-line="876" selection-end-line="876" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Ear_image/Test/Before_preprocess/0012.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Ear_image/Test/Before_preprocess/0008.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/create_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -581,16 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Ear_detecter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-          <folding>
-            <element signature="e#48#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Ear_test_dataset.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -600,26 +628,6 @@
       <provider editor-type-id="csv-text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/ear_change.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/ear_test_change.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4756">
-          <caret line="327" column="33" selection-start-line="327" selection-start-column="33" selection-end-line="327" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,9 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/solidium_webapp/static/js/chartist.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -711,13 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_site/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
         </state>
       </provider>
     </entry>
@@ -739,20 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/run.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/stream.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -786,38 +770,6 @@
     <entry file="file://$PROJECT_DIR$/solidium_webapp/static/img/sidebar-1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1539711571343" expanded="true" signature="854:902" ph="..." />
-            <marker date="1539711571343" expanded="true" signature="3491:3496" ph="..." />
-            <marker date="1539711571343" expanded="true" signature="3906:4143" ph="..." />
-            <marker date="1539711571343" expanded="true" signature="4164:4300" ph="..." />
-            <marker date="1539711571343" expanded="true" signature="5088:5089" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/solidium_webapp/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -830,6 +782,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -837,19 +796,133 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/start 복사본.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/ear_change.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/ear_test_change.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5558">
+          <caret line="379" selection-start-line="379" selection-end-line="379" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/sound/voice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/ajaxtest.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        <state relative-caret-position="183">
+          <caret line="298" column="29" selection-start-line="298" selection-start-column="29" selection-end-line="298" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/h5py/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="29" column="84" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/run.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/stream.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Ear_detecter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+          <folding>
+            <element signature="e#48#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/start.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="435">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1847#1853#0#HTML" expanded="true" />
+            <element signature="e#1853#1859#0#HTML" expanded="true" />
+            <element signature="e#1954#1960#0#HTML" expanded="true" />
+            <element signature="e#1960#1966#0#HTML" expanded="true" />
+            <element signature="e#2062#2068#0#HTML" expanded="true" />
+            <element signature="e#2068#2074#0#HTML" expanded="true" />
+            <element signature="e#2170#2176#0#HTML" expanded="true" />
+            <element signature="e#2176#2182#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_site/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_site/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="136" column="56" selection-start-line="136" selection-start-column="56" selection-end-line="136" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1539785689984" expanded="true" signature="919:967" ph="..." />
+            <marker date="1539785689984" expanded="true" signature="5029:5034" ph="..." />
+            <marker date="1539785689984" expanded="true" signature="5444:5681" ph="..." />
+            <marker date="1539785689984" expanded="true" signature="5702:5838" ph="..." />
+            <marker date="1539785689984" expanded="true" signature="6853:6895" ph="..." />
+            <marker date="1539785689984" expanded="true" signature="6894:6895" ph="..." />
           </folding>
         </state>
       </provider>
