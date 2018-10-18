@@ -24,6 +24,9 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
 import glob
 import shutil
+from collections import OrderedDict
+
+from solidium_webapp import fusioncharts
 
 class MainView(View):
     def get(self,request,*args,**kwargs):
@@ -89,7 +92,7 @@ class RunView(View):
         request.session['start_complete']=False
         my_env = { **os.environ, 'PATH': '/usr/sbin:/sbin:' + os.environ['PATH']}
         # print(my_env)
-        sound_script_path = "./solidium_webapp/sound/Papago.mpeg"
+        sound_script_path = "./solidium_webapp/sound/start.mpeg"
         ear_script_path = "./solidium_webapp/ear_app/ear_test_change.py"
         call(["mplayer",sound_script_path])
         proc = subprocess.Popen(['python3', ear_script_path], stdout=subprocess.PIPE, env=my_env)
@@ -97,21 +100,31 @@ class RunView(View):
         while proc.poll() is None:
             output = proc.stdout.readline()
             result.append((output).decode())
-        oldstr = result[2]
-        newstr = oldstr.replace("\n", "")
-        print("예측 횟수 : "+ newstr)
-        dic = ast.literal_eval(newstr)
-        dic_max = max(dic.values())
-        predict =""
-        for key,value in dic.items():
-            if dic_max==value:
-                predict=key
-        print("예측한 사람 : "+predict)
-        print("로그인된 정보 : "+str(request.user))
-        if predict==str(request.user):
+        for i in result:
+            if "이동훈" in i:
+                oldstr = result[2]
+                newstr = oldstr.replace("\n", "")
+                print("예측 횟수 : "+ newstr)
+                dic = ast.literal_eval(newstr)
+                dic_max = max(dic.values())
+                predict =""
+                for key,value in dic.items():
+                    request.session[key]=value
+                    if dic_max==value:
+                        predict=key
+                print("예측한 사람 : "+predict)
+                print("로그인된 정보 : "+str(request.user))
+        if str(request.user)=="AnonymousUser":
+            needuid="needuid"
+            return render(request,'run.html',{'predict': predict, 'newstr': newstr, 'needuid': needuid})
+        elif predict==str(request.user):
+            sound_script_path = "./solidium_webapp/sound/authentication_success.mpeg"
+            call(["mplayer", sound_script_path])
             Authentication="Authentication"
             return render(request, 'run.html', {'predict': predict, 'newstr': newstr, 'Authentication': Authentication})
         else:
+            sound_script_path = "./solidium_webapp/sound/authentication_fail.mpeg"
+            call(["mplayer", sound_script_path])
             unauthorized = "unauthorized"
             return render(request, 'run.html', {'predict': predict, 'newstr': newstr, 'unauthorized': unauthorized})
 
@@ -144,8 +157,9 @@ class ResultView(View):
     def get(self,request,*args,**kwargs):
         #if not request.session.get('stream_complete',False):
         #    raise PermissionDenied
+        chartdic=chart(request)
         request.session['stream_complete']=False
-        return render(request,'result.html')
+        return render(request,'result.html',chartdic)
 
 class UserView(View):
     def get(self,request,*args,**kwargs):
@@ -195,6 +209,257 @@ def make_directory(path,name):
 
 
 
+# Loading Data from a Ordered Dictionary
+# Example to create a column 2D chart with the chart data passed as Dictionary format.
+# The `chart` method is defined to load chart data from Dictionary.
+
+def chart(request):
+    # Chart data is passed to the `dataSource` parameter, as dictionary in the form of key-value pairs.
+    dataSource = OrderedDict()
+
+    # The `chartConfig` dict contains key-value pairs data for chart attribute
+    chartConfig = OrderedDict()
+    chartConfig["caption"] = "Top 5 High Ear's Similarity"
+    chartConfig["subCaption"] = "images = Number of ear images"
+    chartConfig["xAxisName"] = "사람 이름"
+    chartConfig["yAxisName"] = "예측 횟수(images)"
+    chartConfig["numberSuffix"] = "P"
+    chartConfig["theme"] = "fusion"
+
+    # The `chartData` dict contains key-value pairs data
+    chartData = OrderedDict()
+    chartData["오윤석"] = request.session.get('오윤석')
+    chartData["이동훈"] = request.session.get('이동훈')
+    chartData["임혜진"] = request.session.get('임혜진')
+    chartData["이동준"] = request.session.get('이동준')
+    chartData["손정효"] = request.session.get('손정효')
+    chartData["Unknown"] = 0
+
+
+    dataSource["chart"] = chartConfig
+    dataSource["data"] = []
+
+    # Convert the data in the `chartData` array into a format that can be consumed by FusionCharts.
+    # The data for the chart should be in an array wherein each element of the array is a JSON object
+    # having the `label` and `value` as keys.
+
+    # Iterate through the data in `chartData` and insert in to the `dataSource['data']` list.
+    for key, value in chartData.items():
+        data = {}
+        data["label"] = key
+        data["value"] = value
+        dataSource["data"].append(data)
+
+    # Create an object for the column 2D chart using the FusionCharts class constructor
+    # The chart data is passed to the `dataSource` parameter.
+    column2D = fusioncharts.FusionCharts("column2d", "ex1", "480", "360", "chart-1", "json", dataSource)
+
+    chartObj2 = fusioncharts.FusionCharts(
+        'heatmap',
+        'ex2',
+        '480',
+        '360',
+        'chart-2',
+        'json',
+        {
+            "chart": {
+                "theme": "fusion",
+                "caption": "Gait Pattern by Feature",
+                "subcaption": "Source: 5 Static Features & 5 Dynamic Features in Gait",
+                "showvalues": "1",
+                "plottooltext": "<div><b>$rowLabel</b><br/>$columnLabel Rating: <b>$datavalue</b>/183</div>"
+            },
+            "rows": {
+                "row": [
+                    {
+                        "id": "오윤석",
+                        "label": "오윤석"
+                    },
+                    {
+                        "id": "이동훈",
+                        "label": "이동훈"
+                    },
+                    {
+                        "id": "임혜진",
+                        "label": "임혜진"
+                    },
+                    {
+                        "id": "손정효",
+                        "label": "손정효"
+                    },
+                    {
+                        "id": "이동준",
+                        "label": "이동준"
+                    }
+                ]
+            },
+            "columns": {
+                "column": [
+                    {
+                        "id": "오윤석",
+                        "label": "오윤석"
+                    },
+                    {
+                        "id": "이동훈",
+                        "label": "이동훈"
+                    },
+                    {
+                        "id": "임혜진",
+                        "label": "임혜진"
+                    },
+                    {
+                        "id": "손정효",
+                        "label": "손정효"
+                    },
+                    {
+                        "id": "이동준",
+                        "label": "이동준"
+                    }
+                ]
+            },
+            "dataset": [
+                {
+                    "data": [
+                        {
+                            "rowid": "오윤석",
+                            "columnid": "오윤석",
+                            "value": "5"
+                        },
+                        {
+                            "rowid": "오윤석",
+                            "columnid": "이동훈",
+                            "value": "0"
+                        },
+                        {
+                            "rowid": "오윤석",
+                            "columnid": "임혜진",
+                            "value": "0"
+                        },
+                        {
+                            "rowid": "오윤석",
+                            "columnid": "손정효",
+                            "value": "155"
+                        },
+                        {
+                            "rowid": "오윤석",
+                            "columnid": "이동준",
+                            "value": "1"
+                        },
+                        {
+                            "rowid": "이동훈",
+                            "columnid": "오윤석",
+                            "value": "0"
+                        },
+                        {
+                            "rowid": "이동훈",
+                            "columnid": "이동훈",
+                            "value": "0"
+                        },
+                        {
+                            "rowid": "이동훈",
+                            "columnid": "임혜진",
+                            "value": "0"
+                        },
+                        {
+                            "rowid": "이동훈",
+                            "columnid": "손정효",
+                            "value": "156"
+                        },
+                        {
+                            "rowid": "이동훈",
+                            "columnid": "이동준",
+                            "value": "6"
+                        },
+                        {
+                            "rowid": "임혜진",
+                            "columnid": "오윤석",
+                            "value": "0"
+                        },
+                        {
+                            "rowid": "임혜진",
+                            "columnid": "이동훈",
+                            "value": "0"
+                        },
+                        {
+                            "rowid": "임혜진",
+                            "columnid": "임혜진",
+                            "value": "149"
+                        },
+                        {
+                            "rowid": "임혜진",
+                            "columnid": "손정효",
+                            "value": "15"
+                        },
+                        {
+                            "rowid": "임혜진",
+                            "columnid": "이동준",
+                            "value": "5"
+                        },
+                        {
+                            "rowid": "손정효",
+                            "columnid": "오윤석",
+                            "value": "0"
+                        },
+                        {
+                            "rowid": "손정효",
+                            "columnid": "이동훈",
+                            "value": "0"
+                        },
+                        {
+                            "rowid": "손정효",
+                            "columnid": "임혜진",
+                            "value": "0"
+                        },
+                        {
+                            "rowid": "손정효",
+                            "columnid": "손정효",
+                            "value": "183"
+                        },
+                        {
+                            "rowid": "손정효",
+                            "columnid": "이동준",
+                            "value": "3"
+                        },
+                        {
+                            "rowid": "이동준",
+                            "columnid": "오윤석",
+                            "value": "18"
+                        },
+                        {
+                            "rowid": "이동준",
+                            "columnid": "이동훈",
+                            "value": "0"
+                        },
+                        {
+                            "rowid": "이동준",
+                            "columnid": "임혜진",
+                            "value": "4"
+                        },
+                        {
+                            "rowid": "이동준",
+                            "columnid": "손정효",
+                            "value": "19"
+                        },
+                        {
+                            "rowid": "이동준",
+                            "columnid": "이동준",
+                            "value": "128"
+                        }
+                    ]
+                }
+            ],
+            "colorrange": {
+                "gradient": "1",
+                "minvalue": "0",
+                "maxvalue": "183",
+                "mapbypercent": "0",
+                "code": "#67CDF2",
+                "startlabel": "Poor",
+                "endlabel": "Outstanding"
+            }
+        })
+    chartdic =  {'output': column2D.render(), 'output2':chartObj2.render(), 'chartTitle1': '귀 인식 결과','chartTitle2':'걸음걸이 Confusion Matrix'}
+    return chartdic
 
 
 

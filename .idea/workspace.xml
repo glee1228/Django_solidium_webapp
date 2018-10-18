@@ -2,17 +2,525 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fa7534-94dd-4ba0-a3da-46f396c86083" name="Default Changelist" comment="uploadImage page : /">
-      <change afterPath="$PROJECT_DIR$/solidium_webapp/sound/Papago.mpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/1waytraindata_dynamic_max.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/.left_ear.py.swp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_eye.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_eye_tree_eyeglasses.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_frontalcatface.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_frontalcatface_extended.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_frontalface_alt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_frontalface_alt2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_frontalface_alt_tree.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_fullbody.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_lefteye_2splits.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_licence_plate_rus_16stages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_lowerbody.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_mcs_leftear.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_mcs_rightear.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_profileface.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_righteye_2splits.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_russian_plate_number.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_smile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/haarcascade_upperbody.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detect/haarcascades/update_haarcascade_leftear.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detecter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0000.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0001.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0002.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0003.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0004.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0005.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0006.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0007.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0008.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0009.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0010.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0011.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0012.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0013.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0014.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0015.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0016.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0017.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0018.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0019.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0020.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0021.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0022.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0023.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0024.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0025.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0026.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0027.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0028.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0029.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0030.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0031.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0032.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0033.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0034.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0035.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0036.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0037.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0038.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0039.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0040.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0041.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0042.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0043.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0044.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0045.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0046.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0047.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0048.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0049.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0050.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0051.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0052.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0053.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0054.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0055.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0056.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0057.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0058.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0059.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0060.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/After_preprocess/0061.jpg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0010.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0011.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0012.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0013.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0014.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0015.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0016.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0017.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0018.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0019.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0021.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0022.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0024.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0025.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0026.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0027.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0028.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0029.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0030.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0031.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0032.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0033.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0034.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0035.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0036.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0037.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0038.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0039.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0040.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0041.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0042.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0043.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0044.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0045.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0046.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0047.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0048.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0049.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0050.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0051.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0052.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0053.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0054.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0055.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0056.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0057.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0058.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0059.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0060.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/0061.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0010.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0011.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0012.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0013.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0014.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0015.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0016.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0017.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0018.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0019.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0021.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0022.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0024.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0025.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0026.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0027.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0028.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0029.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0030.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0031.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0032.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0033.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0034.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0035.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0036.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0037.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0038.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0039.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0040.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0041.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0042.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0043.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0044.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0045.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0046.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0047.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0048.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0049.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0050.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0051.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0052.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0053.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0054.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0055.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0056.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0057.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0058.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0059.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0060.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_image/Test/Before_preprocess/After_resize_pixel/0061.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_test_dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/PaxHeader/train data 코드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/PaxHeader/남상우_20180609_151705_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Test_Data/Ear_test_data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/body_features 손정효.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/body_features 오윤석.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/body_features 이동준.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/body_features 이동훈.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/body_features 임혜진.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/body_features.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/body_features_test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/checkpoint/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/checkpoint/ear_model.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/checkpoint/ear_model.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/checkpoint/ear_model.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/create_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/docker/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/ear_change.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/ear_test_change.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/dance.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/experiments.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/feature.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/imgcat0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/inference_result2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/loss_ll_heat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/loss_ll_paf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/openpose_macbook13_mobilenet2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/openpose_macbook_cmu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/openpose_macbook_mobilenet3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/openpose_p40_cmu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/openpose_p40_mobilenet.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/openpose_tx2_mobilenet3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/ros.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/etcs/training.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/COCO_val2014_000000000357.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/apink1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/apink1_crop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/apink1_crop_s1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/apink2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/apink3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/cat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/golf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/hand1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/hand1_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/hand2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/handsup1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/p3_dance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/ski.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/images/valid_person1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/launch/demo_video.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/models/graph/cmu/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/models/graph/cmu/download.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/models/graph/mobilenet_thin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/models/graph/mobilenet_thin/graph.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/models/graph/mobilenet_thin/graph_freeze.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/models/graph/mobilenet_thin/graph_opt.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/models/numpy/download.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/models/pretrained/mobilenet_v1_0.50_224_2017_06_14/download.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/models/pretrained/mobilenet_v1_0.75_224_2017_06_14/download.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/models/pretrained/mobilenet_v1_1.0_224_2017_06_14/download.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/models/pretrained/resnet_v2_101/download.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/msg/BodyPartElm.msg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/msg/Person.msg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/msg/Persons.msg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/onlyratio.txt.scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/outputdata/(PlanA)all_x.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/outputdata/(PlanA)all_y.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/outputdata/(PlanA)only_coordination_x.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/outputdata/(PlanA)only_coordination_y.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/outputdata/(PlanA)only_ratio_x.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/outputdata/(PlanA)only_ratio_y.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/outputdata/(PlanB)all.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/outputdata/body_features.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/outputdata/coordinationtest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/package.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_video.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_webcam_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_webcam_train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/scripts/broadcaster_ros.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/scripts/visualization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/datum_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/estimator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/eval.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/network_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/network_cmu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/network_dsconv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/network_mobilenet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/network_mobilenet_thin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/network_personlab.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/networks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pafprocess/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pafprocess/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pafprocess/numpy.i" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pafprocess/pafprocess.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pafprocess/pafprocess.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pafprocess/pafprocess.i" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pafprocess/pafprocess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pafprocess/pafprocess_wrap.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pafprocess/pafprocess_wrap.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pafprocess/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pose_augment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pose_datamaster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pose_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pose_dataworker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pycocotools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pycocotools/_mask.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pycocotools/coco.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pycocotools/cocoeval.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pycocotools/mask.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/pystopwatch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/runner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slidingwindow/ArrayUtils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slidingwindow/Batching.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slidingwindow/Merging.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slidingwindow/RectangleUtils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slidingwindow/SlidingWindow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slidingwindow/WindowDistance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slidingwindow/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/WORKSPACE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/build_imagenet_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/cifar10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/dataset_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/dataset_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/download_and_convert_cifar10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/download_and_convert_flowers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/download_and_convert_imagenet.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/download_and_convert_mnist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/download_imagenet.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/flowers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/imagenet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/imagenet_2012_validation_synset_labels.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/imagenet_lsvrc_2015_synsets.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/imagenet_metadata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/mnist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/preprocess_imagenet_validation_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/datasets/process_bounding_boxes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/deployment/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/deployment/model_deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/deployment/model_deploy_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/download_and_convert_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/eval_image_classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/export_inference_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/export_inference_graph_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/alexnet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/alexnet_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/cifarnet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/cyclegan.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/cyclegan_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/dcgan.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/dcgan_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/inception.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/inception_resnet_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/inception_resnet_v2_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/inception_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/inception_v1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/inception_v1_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/inception_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/inception_v2_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/inception_v3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/inception_v3_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/inception_v4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/inception_v4_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/lenet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet/conv_blocks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet/madds_top1_accuracy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet/mnet_v1_vs_v2_pixel1_latency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet/mobilenet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet/mobilenet_example.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet/mobilenet_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet/mobilenet_v2_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet_v1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet_v1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet_v1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet_v1_eval.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet_v1_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/mobilenet_v1_train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/nasnet/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/nasnet/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/nasnet/nasnet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/nasnet/nasnet_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/nasnet/nasnet_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/nasnet/nasnet_utils_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/nasnet/pnasnet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/nasnet/pnasnet_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/nets_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/nets_factory_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/overfeat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/overfeat_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/pix2pix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/pix2pix_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/resnet_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/resnet_v1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/resnet_v1_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/resnet_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/resnet_v2_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/vgg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/nets/vgg_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/preprocessing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/preprocessing/cifarnet_preprocessing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/preprocessing/inception_preprocessing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/preprocessing/lenet_preprocessing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/preprocessing/preprocessing_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/preprocessing/vgg_preprocessing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/scripts/export_mobilenet.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/scripts/finetune_inception_resnet_v2_on_flowers.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/scripts/finetune_inception_v1_on_flowers.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/scripts/finetune_inception_v3_on_flowers.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/scripts/finetune_resnet_v1_50_on_flowers.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/scripts/train_cifarnet_on_cifar10.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/scripts/train_lenet_on_mnist.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/slim_walkthrough.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/slim/train_image_classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/tensblur/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/tensblur/smoother.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/tf_pose/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/fusioncharts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/sound/authentication_fail.mpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/sound/authentication_success.mpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/sound/enrollment.mpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solidium_webapp/templates/result 복사본.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/media/video/123.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/media/video/123.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_site/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_detecter.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_detecter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_test_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_test_dataset.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_app/Test_Data/Ear_test_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_app/Test_Data/Ear_test_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/COPYRIGHT" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/COPYRIGHT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/FAQ.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/FAQ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/Makefile.win" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/Makefile.win" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/README" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/heart_scale" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/heart_scale" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm.jar" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm.java" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm.m4" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm.m4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm_model.java" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm_model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm_node.java" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm_node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm_parameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm_parameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm_print_interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm_print_interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm_problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/libsvm/svm_problem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/svm_predict.java" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/svm_predict.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/svm_scale.java" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/svm_scale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/svm_toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/svm_toy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/svm_train.java" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/svm_train.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/test_applet.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/java/test_applet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/README" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/libsvmread.c" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/libsvmread.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/libsvmwrite.c" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/libsvmwrite.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/make.m" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/make.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/svm_model_matlab.c" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/svm_model_matlab.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/svm_model_matlab.h" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/svm_model_matlab.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/svmpredict.c" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/svmpredict.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/svmtrain.c" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/matlab/svmtrain.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/python/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/python/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/python/README" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/python/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/python/svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/python/svm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/python/svmutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/python/svmutil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-predict.c" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-predict.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-scale.c" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-scale.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/callbacks.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/callbacks.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/callbacks.h" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/callbacks.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/interface.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/svm-toy.glade" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/gtk/svm-toy.glade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/qt/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/qt/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/qt/svm-toy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/qt/svm-toy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/windows/svm-toy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-toy/windows/svm-toy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-train.c" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm-train.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm.def" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm.def" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm.h" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/tools/README" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/tools/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/tools/easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/tools/easy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/sound/Papago.mpeg" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/sound/start.mpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/run.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/run.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/start.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/stream.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/stream.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,12 +568,12 @@
         <counts>
           <entry key="JPG" value="5" />
           <entry key="csv" value="6" />
-          <entry key="gitignore" value="4" />
-          <entry key="html" value="76" />
+          <entry key="gitignore" value="5" />
+          <entry key="html" value="88" />
           <entry key="jpg" value="25" />
           <entry key="js" value="2" />
           <entry key="png" value="5" />
-          <entry key="py" value="167" />
+          <entry key="py" value="192" />
           <entry key="svg" value="1" />
           <entry key="txt" value="4" />
         </counts>
@@ -73,11 +581,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="3" />
-          <entry key="HTML" value="76" />
+          <entry key="HTML" value="88" />
           <entry key="Image" value="35" />
           <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="167" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Python" value="192" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
@@ -85,8 +593,8 @@
         <counts>
           <entry key="csv" value="1" />
           <entry key="dummy" value="11" />
-          <entry key="html" value="3162" />
-          <entry key="py" value="11709" />
+          <entry key="html" value="3825" />
+          <entry key="py" value="13865" />
           <entry key="py@Django_solidium_webapp" value="54" />
           <entry key="txt" value="103" />
         </counts>
@@ -95,9 +603,9 @@
         <counts>
           <entry key="CSV" value="1" />
           <entry key="CommandLine" value="8" />
-          <entry key="HTML" value="3162" />
+          <entry key="HTML" value="3825" />
           <entry key="PLAIN_TEXT" value="160" />
-          <entry key="Python" value="11709" />
+          <entry key="Python" value="13865" />
         </counts>
       </usages-collector>
     </session>
@@ -107,84 +615,40 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/solidium_webapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+            <state relative-caret-position="3054">
+              <caret line="334" column="46" selection-start-line="334" selection-start-column="46" selection-end-line="334" selection-end-column="46" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1539785689984" expanded="true" signature="919:967" ph="..." />
-                <marker date="1539785689984" expanded="true" signature="5029:5034" ph="..." />
-                <marker date="1539785689984" expanded="true" signature="5444:5681" ph="..." />
-                <marker date="1539785689984" expanded="true" signature="5702:5838" ph="..." />
-                <marker date="1539785689984" expanded="true" signature="6853:6895" ph="..." />
-                <marker date="1539785689984" expanded="true" signature="6894:6895" ph="..." />
+                <marker date="1539862709470" expanded="true" signature="997:1045" ph="..." />
+                <marker date="1539862709470" expanded="true" signature="5744:5749" ph="..." />
+                <marker date="1539862709470" expanded="true" signature="6159:6437" ph="..." />
+                <marker date="1539862709470" expanded="true" signature="6458:6594" ph="..." />
+                <marker date="1539862709470" expanded="true" signature="16696:16707" ph="..." />
+                <marker date="1539862709470" expanded="true" signature="16706:16707" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_site/urls.py">
+        <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/result 복사본.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_site/settings.py">
+        <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="136" column="56" selection-start-line="136" selection-start-column="56" selection-end-line="136" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Ear_detecter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
-              <folding>
-                <element signature="e#48#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_webapp/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/h5py/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="29" column="84" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/start.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-              <folding>
-                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#1847#1853#0#HTML" expanded="true" />
-                <element signature="e#1853#1859#0#HTML" expanded="true" />
-                <element signature="e#1954#1960#0#HTML" expanded="true" />
-                <element signature="e#1960#1966#0#HTML" expanded="true" />
-                <element signature="e#2062#2068#0#HTML" expanded="true" />
-                <element signature="e#2068#2074#0#HTML" expanded="true" />
-                <element signature="e#2170#2176#0#HTML" expanded="true" />
-                <element signature="e#2176#2182#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="4" column="88" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -192,8 +656,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/run.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+            <state relative-caret-position="60">
+              <caret line="4" column="88" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/start.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/user.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -201,15 +683,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/stream.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="153">
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/ear_test_change.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="736">
+              <caret line="367" column="13" selection-start-line="367" selection-start-column="13" selection-end-line="367" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_gait_app/ear_test_change.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="63" column="90" selection-start-line="63" selection-start-column="90" selection-end-line="63" selection-end-column="90" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -224,23 +725,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>8009</find>
-      <find>register</find>
-      <find>form action</find>
-      <find>action</find>
-      <find>username</find>
-      <find>email</find>
-      <find>button</find>
-      <find>alert</find>
-      <find>post</find>
-      <find>load st</find>
-      <find>load static</find>
-      <find>load</find>
-      <find>img</find>
-      <find>href</find>
-      <find>result</find>
-      <find>assets</find>
-      <find>static</find>
       <find>Creative</find>
       <find>Dashboard</find>
       <find>User</find>
@@ -253,7 +737,24 @@
       <find>form</find>
       <find>hidden</find>
       <find>request.POST</find>
+      <find>user.</find>
+      <find>request.session.get</find>
+      <find>op</find>
+      <find>motoz2</find>
+      <find>chart</find>
+      <find>outs</find>
+      <find>ex1</find>
+      <find>ch</find>
+      <find>140</find>
+      <find>5</find>
+      <find>simple</find>
+      <find>400</find>
       <find>os.path</find>
+      <find>svm</find>
+      <find>common</find>
+      <find>ear_detecter</find>
+      <find>localhost</find>
+      <find>local</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -275,25 +776,35 @@
         <option value="$PROJECT_DIR$/solidium_webapp/testmp4.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/ear_app/ear_change.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/ear_app/create_data.py" />
-        <option value="$PROJECT_DIR$/solidium_webapp/ear_app/ear_test_change.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_test_dataset.csv" />
         <option value="$PROJECT_DIR$/solidium_webapp/ear_app/Test_Data/Ear_test_data.txt" />
         <option value="$PROJECT_DIR$/solidium_webapp/forms.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/templates/typography.html" />
         <option value="$PROJECT_DIR$/solidium_webapp/templates/table.html" />
-        <option value="$PROJECT_DIR$/solidium_webapp/urls.py" />
-        <option value="$PROJECT_DIR$/solidium_webapp/templates/result.html" />
         <option value="$PROJECT_DIR$/solidium_webapp/templates/user.html" />
-        <option value="$PROJECT_DIR$/solidium_webapp/templates/stream.html" />
         <option value="$PROJECT_DIR$/solidium_webapp/templates/ajaxtest.html" />
         <option value="$PROJECT_DIR$/solidium_webapp/templates/start 복사본.html" />
         <option value="$PROJECT_DIR$/solidium_webapp/sound/voice.py" />
-        <option value="$PROJECT_DIR$/solidium_webapp/templates/start.html" />
-        <option value="$PROJECT_DIR$/solidium_webapp/templates/main.html" />
-        <option value="$PROJECT_DIR$/solidium_webapp/templates/run.html" />
         <option value="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_detecter.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/templates/run.html" />
+        <option value="$PROJECT_DIR$/solidium_webapp/templates/result.html" />
+        <option value="$PROJECT_DIR$/solidium_webapp/urls.py" />
         <option value="$PROJECT_DIR$/solidium_site/settings.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/ear_app/ear_test_change.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detecter.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/ear_gait_app/ear_change.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/ear_gait_app/run.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_checkpoint.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_directory.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_video.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_webcam_test.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_webcam_train.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/ear_gait_app/setup.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/ear_gait_app/ear_test_change.py" />
         <option value="$PROJECT_DIR$/solidium_webapp/views.py" />
+        <option value="$PROJECT_DIR$/solidium_webapp/templates/main.html" />
+        <option value="$PROJECT_DIR$/solidium_webapp/templates/start.html" />
+        <option value="$PROJECT_DIR$/solidium_webapp/templates/stream.html" />
       </list>
     </option>
   </component>
@@ -303,12 +814,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="571" />
-    <option name="y" value="26" />
-    <option name="width" value="1055" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="299" />
+    <option name="y" value="24" />
+    <option name="width" value="1343" />
     <option name="height" value="947" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -321,6 +833,17 @@
             <path>
               <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_solidium_webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_solidium_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_solidium_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
@@ -342,16 +865,13 @@
               <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_solidium_webapp" type="462c0819:PsiDirectoryNode" />
               <item name="solidium_webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="ear_app" type="462c0819:PsiDirectoryNode" />
-              <item name="Ear_image" type="462c0819:PsiDirectoryNode" />
+              <item name="ear_gait_app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_solidium_webapp" type="462c0819:PsiDirectoryNode" />
               <item name="solidium_webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="ear_app" type="462c0819:PsiDirectoryNode" />
-              <item name="Ear_image" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
@@ -367,6 +887,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/donghoon/GitHub/solidium_app/Django_solidium_webapp/solidium_webapp/ear_gait_app/run_webcam_train.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -451,7 +972,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8009" />
-      <option name="host" value="127.0.0.1" />
+      <option name="host" value="192.168.0.56" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -492,10 +1013,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="571" y="26" width="1055" height="947" extended-state="0" />
+    <frame x="299" y="24" width="1343" height="947" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2171767" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16910069" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="manage.py@Django_solidium_webapp" weight="0.32932693" />
@@ -573,126 +1094,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/create_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/training/input.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="761" selection-start-line="761" selection-end-line="761" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/data_flow_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="475" selection-start-line="475" selection-end-line="475" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/gen_data_flow_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="3479" selection-start-line="3479" selection-end-line="3479" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="1734" column="19" selection-start-line="1734" selection-start-column="19" selection-end-line="1734" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Ear_dataset.csv">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="74850">
-          <caret line="4990" column="63" selection-start-line="4990" selection-start-column="63" selection-end-line="4990" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Ear_test_dataset.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Test_Data/Ear_test_data.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tf-pose-estimation/lib/python3.6/wsgiref/handlers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="343" selection-start-line="343" selection-end-line="343" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tf-pose-estimation/lib/python3.6/wsgiref/simple_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/dface.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/uimage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tf-pose-estimation/lib/python3.6/importlib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tf-pose-estimation/lib/python3.6/site-packages/django/utils/datastructures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1539268787289" expanded="true" signature="533:548" ph="..." />
-            <marker date="1539268787289" expanded="true" signature="533:553" ph="..." />
-            <marker date="1539268787289" expanded="true" signature="533:557" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -782,42 +1183,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/start 복사본.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/ear_change.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/ear_test_change.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5558">
-          <caret line="379" selection-start-line="379" selection-end-line="379" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/solidium_webapp/sound/voice.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -832,13 +1199,6 @@
     <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/ajaxtest.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="298" column="29" selection-start-line="298" selection-start-column="29" selection-end-line="298" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/h5py/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -846,83 +1206,252 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/solidium_site/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/urls.py">
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="240">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1539268787289" expanded="true" signature="533:548" ph="..." />
+            <marker date="1539268787289" expanded="true" signature="533:553" ph="..." />
+            <marker date="1539268787289" expanded="true" signature="533:557" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/run.html">
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/fusioncharts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        <state relative-caret-position="347">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/stream.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_site/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="491">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/Ear_detecter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+        <state relative-caret-position="555">
+          <caret line="37" column="38" selection-end-line="114" />
           <folding>
             <element signature="e#48#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/start.html">
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/ear_change.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state relative-caret-position="183">
+          <caret line="363" column="34" selection-end-line="437" />
           <folding>
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1847#1853#0#HTML" expanded="true" />
-            <element signature="e#1853#1859#0#HTML" expanded="true" />
-            <element signature="e#1954#1960#0#HTML" expanded="true" />
-            <element signature="e#1960#1966#0#HTML" expanded="true" />
-            <element signature="e#2062#2068#0#HTML" expanded="true" />
-            <element signature="e#2068#2074#0#HTML" expanded="true" />
-            <element signature="e#2170#2176#0#HTML" expanded="true" />
-            <element signature="e#2176#2182#0#HTML" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_site/urls.py">
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_checkpoint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_gait_app/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_directory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_gait_app/create_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_webcam_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1106">
+          <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_gait_app/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_gait_app/ear_change.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1731">
+          <caret line="421" column="50" selection-start-line="421" selection-start-column="50" selection-end-line="421" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_video.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_gait_app/run_webcam_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="169" column="42" selection-start-line="169" selection-start-column="42" selection-end-line="169" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_gait_app/Ear_detecter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+          <folding>
+            <element signature="e#48#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tf-pose-estimation/lib/python3.6/ast.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_gait_app/ear_test_change.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="90" selection-start-line="63" selection-start-column="90" selection-end-line="63" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/ear_app/ear_test_change.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="367" column="13" selection-start-line="367" selection-start-column="13" selection-end-line="367" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/result 복사본.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_site/settings.py">
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="136" column="56" selection-start-line="136" selection-start-column="56" selection-end-line="136" selection-end-column="56" />
+        <state relative-caret-position="15">
+          <caret line="4" column="88" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/run.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="88" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/stream.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/solidium_webapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+        <state relative-caret-position="3054">
+          <caret line="334" column="46" selection-start-line="334" selection-start-column="46" selection-end-line="334" selection-end-column="46" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1539785689984" expanded="true" signature="919:967" ph="..." />
-            <marker date="1539785689984" expanded="true" signature="5029:5034" ph="..." />
-            <marker date="1539785689984" expanded="true" signature="5444:5681" ph="..." />
-            <marker date="1539785689984" expanded="true" signature="5702:5838" ph="..." />
-            <marker date="1539785689984" expanded="true" signature="6853:6895" ph="..." />
-            <marker date="1539785689984" expanded="true" signature="6894:6895" ph="..." />
+            <marker date="1539862709470" expanded="true" signature="997:1045" ph="..." />
+            <marker date="1539862709470" expanded="true" signature="5744:5749" ph="..." />
+            <marker date="1539862709470" expanded="true" signature="6159:6437" ph="..." />
+            <marker date="1539862709470" expanded="true" signature="6458:6594" ph="..." />
+            <marker date="1539862709470" expanded="true" signature="16696:16707" ph="..." />
+            <marker date="1539862709470" expanded="true" signature="16706:16707" ph="..." />
           </folding>
         </state>
       </provider>

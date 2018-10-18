@@ -10,7 +10,7 @@ urlpatterns =[
     url(r'^stream/$',StreamView.as_view(),name='stream'),
     url(r'^streaming/$',streaming,name='streaming'),
     url(r'^result/$',ResultView.as_view(),name='result'),
-    url(r'^user/$',UserView.as_view(),name='user'),
+
 
 ]
 #이미지 파일을 업로드 하기위한 설정

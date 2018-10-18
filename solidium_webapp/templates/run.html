@@ -40,6 +40,11 @@ $(document).ajaxStart(function(){
             <h5>잠시 후 홈 화면으로 이동합니다.</h5>
             <p class="text-h5">로그인 계정과 사용자 보행,귀 인식 정보가 일치 하지 않습니다.</p>
             {% endif %}
+        {% if needuid %}
+            <p class="text-h3">1차 로그인 정보 필요<br></p>
+            <h5>잠시 후 홈 화면으로 이동합니다.</h5>
+            <p class="text-h4">계정 로그인을 하지 않았습니다.</p>
+            {% endif %}
         {% if Authentication %}
         <form id="submitform" , method="POST">
         {% csrf_token %}
@@ -48,6 +53,13 @@ $(document).ajaxStart(function(){
         </form>
       {% endif %}
       {% if unauthorized %}
+        <form id="submitform" , method="POST">
+        {% csrf_token %}
+            <input type="hidden" name="auth" value="fail">
+        <p class="text-h3 mt-5"><button class="btn btn-round" type="submit"> Home </button></p>
+        </form>
+      {% endif %}
+      {% if needuid %}
         <form id="submitform" , method="POST">
         {% csrf_token %}
             <input type="hidden" name="auth" value="fail">

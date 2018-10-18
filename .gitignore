@@ -1,41 +1,23 @@
 # Compiled source #
 ###################
-solidium_webapp/*.com
-solidium_webapp/*.class
-*.dll
-*.exe
-*.o
-*.so
  
 # Packages #
 ############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
 
 # Logs and databases #
 ######################
-*.log
-*.sql
-*.sqlite
  
 # OS generated files #
 ######################
-solidium_webapp/.DS_Store
-solidium_site/.DS_Store
-media/.DS_Store
 media/*.jpg
-meida/*.mp4
+media/video/*.mp4
 solidium_webapp/ear_app/Ear_image/
 solidium_webapp/ear_app/checkpoint/
-
+solidium_webapp/ear_gait_app/checkpoint/
+solidium_webapp/ear_gait_app/models/
+solidium_webapp/ear_gait_app/*.csv
+solidium_webapp/ear_gait_app/*.txt
+solidium_webapp/ear_gait_app/PaxHeader/
 .DS_Store*
 ehthumbs.db
 Icon?

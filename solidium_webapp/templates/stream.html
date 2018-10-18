@@ -1,30 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Screens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/1.0.2/css/froala_blocks.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
-<h1>Step3</h1>
+{% load static %}
+<section class="fdb-block fp-active" style=" padding-top:50px; padding-bottom: 0px;" data-block-type="contents" data-id="4" draggable="true">
+    <div class="container">
+    <nav class="navbar">
+      <a href="http://192.168.0.56:8009/#home">
+          <img src="{% static "img/logo3.png" %}" height="50" alt="image">
+        </a>
+        <li class="nav-item">
+            <a class="nav-item">{{ user.username }} 님 환영합니다.</a>
+        </li>
+    </nav>
 
-<form action="/stream/", method="POST">
-  {% csrf_token %}
-  <input type="submit" value="결과보기">
-</form>
-    <table>
-        <tr>
+  </div>
+</section>
+<section class="fdb-block fp-active" style="padding-top:30px; padding-bottom:10px;" data-block-type="contents" data-id="1" draggable="true">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <h1>Step2</h1>
+           <form action="/stream/", method="POST">
+        {% csrf_token %}
+            <button class="btn" type="submit">결과 보기</button>
+        </form>
+      </div>
+    </div>
 
-            <td>
-                    <h1>Video Streaming Demonstration 1</h1>
+    <div class="row text-center pt-3 pt-xl-5">
+      <div class="col-12 col-sm-10 m-auto m-md-0 col-md-6">
+       <img src="{% url 'streaming' %}" width="500" height="400">
+        <p class="text-h3">Ear Recognition</p>
+      </div>
 
-                    <img src="{% url 'streaming' %}">
+      <div class="col-12 col-sm-10 m-auto m-md-0 col-md-6 pt-5 pt-md-0">
+        <img src="{% url 'streaming' %}" width="500" height="400">
+        <p class="text-h3">Gait Recognition</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="fdb-block footer-small" data-block-type="footers" data-id="5">
+  <div class="container">
+    <div class="row text-center align-items-center">
+      <div class="col-12 col-sm-6 col-md-4 text-sm-left">
+        <img alt="image" src="{% static "img/logo3.png" %}" height="30">
+      </div>
 
-            </td>
+      <div class="col-12 col-sm-6 col-md-4 mt-4 mt-sm-0 text-center text-sm-right text-md-center">
+        © 2018 Solidium#2
+      </div>
 
-        </tr>
-    </table>
+      <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">
+        <a href="https://www.froala.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+        <a href="https://www.froala.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;
+        <a href="https://www.froala.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;
+        <a href="https://www.froala.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>&nbsp;&nbsp;
+        <a href="https://www.froala.com"><i class="fa fa-google" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
+
