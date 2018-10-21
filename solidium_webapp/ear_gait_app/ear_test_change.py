@@ -29,13 +29,13 @@ flags.DEFINE_integer('training_epochs', 200, 'input training_epochs')
 def Euclid(a, b) : 
     return (((a[0]-b[0])**2 + (a[1]-b[1])**2)**0.5)
 
-logger = logging.getLogger('TfPoseEstimator-WebCam')
-logger.setLevel(logging.DEBUG)
+#logger = logging.getLogger('TfPoseEstimator-WebCam')
+#logger.setLevel(logging.DEBUG)
 ch = logging.StreamHandler()
 ch.setLevel(logging.DEBUG)
 formatter = logging.Formatter('[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
 ch.setFormatter(formatter)
-logger.addHandler(ch)
+#logger.addHandler(ch)
 
 fps_time = 0
 timestart = time.time()
@@ -346,16 +346,16 @@ if __name__ == "__main__":
     parser.add_argument('--show-process', type=bool, default=False,
                         help='for debug purpose, if enabled, speed for inference is dropped.')
     args = parser.parse_args()
-    logger.debug('initialization %s : %s' % (args.model, get_graph_path(args.model)))
+    #logger.debug('initialization %s : %s' % (args.model, get_graph_path(args.model)))
     w, h = model_wh(args.resize)
     if w > 0 and h > 0:
         e = TfPoseEstimator(get_graph_path(args.model), target_size=(w, h))
     else:
         e = TfPoseEstimator(get_graph_path(args.model), target_size=(432, 368))
-    logger.debug('cam read+')
+    #logger.debug('cam read+')
     cam = cv2.VideoCapture(args.camera)
     ret_val, image = cam.read()
-    logger.info('cam image=%dx%d' % (image.shape[1], image.shape[0]))
+    #logger.info('cam image=%dx%d' % (image.shape[1], image.shape[0]))
 
 
 
@@ -363,11 +363,11 @@ if __name__ == "__main__":
     while True:
 
         ret_val, image = cam.read()
-        logger.debug('image process+')
+        #logger.debug('image process+')
         humans = e.inference(image, resize_to_default=(w > 0 and h > 0), upsample_size=args.resize_out_ratio)
-        logger.debug('postprocess+')
+        #logger.debug('postprocess+')
         image = TfPoseEstimator.draw_humans(image, humans, imgcopy=False)
-        logger.debug('show+')
+        #logger.debug('show+')
         cv2.putText(image,
                     "FPS: %f" % (1.0 / (time.time() - fps_time)),
                     (10, 10),  cv2.FONT_HERSHEY_SIMPLEX, 0.5,
@@ -506,7 +506,7 @@ if __name__ == "__main__":
     z = cnt.index(max(cnt))
     #print(z)
 
-    logger.debug('finished+')
+    #logger.debug('finished+')
 
     cv2.destroyAllWindows()
 
