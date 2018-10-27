@@ -9,6 +9,7 @@
  
 # OS generated files #
 ######################
+media/images/
 media/*.jpg
 media/video/*.mp4
 solidium_webapp/ear_app/Ear_image/
