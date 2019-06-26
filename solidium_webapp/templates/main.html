@@ -21,6 +21,32 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizelegibility;
+    padding: 50px 0;<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" co<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/1.0.2/css/froala_blocks.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+.fdb-block2 {
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
     padding: 50px 0;
     margin-bottom: 50px;
     color: #444;
@@ -38,7 +64,7 @@
     <nav class="navbar navbar-expand-md no-gutters">
       <div class="col-3 text-left">
         <a href="localhost:8009/">
-            <a class="nav-link" href="/"><img src="{% static "/img/logo3.png"  %}"height="30" alt="image"></a>
+            <a class="nav-link" href="/"><img src="{% static "/img/aileader.png"  %}"height="50" alt="image"></a>
           </a>
       </div>
 
@@ -104,7 +130,7 @@
   </div>
 </header>
 
-<!--  
+<!--
 <input type='button' onclick='goHome()' value='버튼'/>
 <script type="text/javascript">
 var goHome = function() { window.location.href="http://localhost:8080/solidium-2/main.html#home"; }
@@ -116,22 +142,22 @@ window.onload=(){
 <!-- 새로고침, 나가기감지  -->
 <script>
 $(window).on('load', function(){
-    
+
 	 window.location.href="http://localhost:8009/#home";
 	 setTimeout (function () {
 		  scrollTo(0,0);
 		 }, 100); //100ms for example
-	 
+
 });
 
 $(window).on('beforeunload', function(){
     // your logic here
 });
 </script>
-<!--  
+<!--
  <script type="text/javascript">
     window.onbeforeunload = function (e) {
-        
+
         $.ajax({
             type: 'GET',
             async: false,
@@ -141,7 +167,7 @@ $(window).on('beforeunload', function(){
     };
 
     window.onload = function (e) {
-    	
+
         $.ajax({
             type: 'GET',
             async: false,
@@ -180,13 +206,16 @@ alert("{{ logout_succ }}")
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="{% static "img/img1.png" %}" alt="First slide">
+{#      <img class="d-block w-100" src="{% static "img/img1.png" %}" alt="First slide">#}
+        <img class="d-block w-100" src="{% static "img/sejong1.jpg" %}" alt="First slide">#}
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{% static "img/img2.png" %}" alt="Second slide">
+{#      <img class="d-block w-100" src="{% static "img/img2.png" %}" alt="Second slide">#}
+        <img class="d-block w-100" src="{% static "img/sejong2.jpg" %}" alt="Second slide">#}
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{% static "img/img3-2.png" %}" alt="Third slide">
+{#      <img class="d-block w-100" src="{% static "img/img3-2.png" %}" alt="Third slide">#}
+        <img class="d-block w-100" src="{% static "img/sejong3.jpg" %}" alt="Third slide">#}
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -297,10 +326,12 @@ alert("{{ logout_succ }}")
                 </label>
             </div>
                              <input type="hidden" name="func" value="signup">
-            <button class="btn mt-4" type="submit">Submit</button>
+            <button class="btn mt-4" type="submit">Submit&face Register</button>
           </div>
         </div>
           </form>
+
+
       </div>
     </div>
   </div>
@@ -314,9 +345,9 @@ alert("{{ logout_succ }}")
   <div class="container" id="demo">
     <div class="row align-items-center">
       <div class="col-12 col-md-6 col-lg-5">
-        <h1>SOLIDIUM #2</h1>
+        <h1>AI Leader</h1>
         <p class="text-h3">
-It recognizes the identity of a person who is registered only by gait and ears, which is different from existing biometrics method.</p>
+It recognizes the identity of a person who is registered only by face, which is different from existing biometrics method.</p>
       </div>
       <div class="col-12 col-md-6 ml-md-auto mt-4 mt-md-0">
         <img alt="image" class="img-fluid" src="https://www.comprompt.co.in/wp-content/uploads/2013/09/comprompt-services-security_solutions.jpg">
@@ -328,158 +359,158 @@ It recognizes the identity of a person who is registered only by gait and ears, 
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-5 text-center pb-md-5">
-          <h1>걸음걸이와 귀로<br>2차 로그인을 하세요.</h1>
+          <h1>얼굴 영상으로<br>2차 로그인을 하세요.</h1>
           <p class="text-h3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
           <p class="mt-4"><a href="http://localhost:8009/start/" class="btn">바로가기</a></p>
         </div>
       </div>
 
 
-      
+
     </div>
   </section>
-<section class="fdb-block fp-active" data-block-type="features" data-id="14" draggable="true">
-  <div class="container">
-    <div class="row justify-content-center pb-5">
-      <div class="col-12 text-center" id="features">
-        <h1>Features</h1>
-      </div>
-    </div>
-
-    <div class="row text-left align-items-center pt-5 pb-md-5">
-      <div class="col-4 col-md-5">
-        <img alt="image" class="img-fluid" src="https://cdn-images-1.medium.com/max/1200/1*oVTetBH6worv5grwvSFkxw.png">
-      </div>
-
-      <div class="col-12 col-md-5 m-md-auto">
-        <h2><strong>Feature One</strong></h2>
-        <p class="text-h3">걸음걸이 인식은 걸음걸이를 촬영해 보폭과 실루엣, 신체 특징 등으로 사람의 걸음걸이 형태를 분석하고 특징을 추출해 사용자를 인증하는 방법입니다. <br><br>보행의 5개의 정적특징 : 어깨 너비, 엉덩이 너비, 골반 길이, 다리 길이, 각 신체 부분의 다른 신체 부분에 대한 비율 <br><br>보행의 5개의 동적특징 : 허벅지 사이의 각도 변화량, 상체와 골반 밑 부분의 각도 변화량, 허벅지와 종아리 사이의 각도 변화량 <br><br>위의 2가지의 분류 기법을 사용해서 신원을 파악합니다.</p>
-        <p><a href="https://www.froala.com">Learn More &gt;</a></p>
-      </div>
-    </div>
-
-    <div class="row text-left align-items-center pt-5 pb-md-5">
-      <div class="col-4 col-md-5 m-md-auto order-md-5">
-        <img alt="image" class="img-fluid" src="http://3.bp.blogspot.com/-JhYfgS7dj0E/T1hYeT73fDI/AAAAAAAAAa4/XthIKIigXsc/s400/mod_ears.jpg">
-      </div>
-
-      <div class="col-12 col-md-5">
-        <h2><strong>Feature Two</strong></h2>
-        <p class="text-h3">귀 인식은 귀를 촬영해 귀의 특징으로 사람의 귀 형태를 추출해 사용자를 인증하는 방법입니다.<br><br>귀 형태 추출 : 전체 영상 중 Haar Cascade Classifier로 귀 형태의 음영차를 이용해 귀 형태를 추출합니다. <br><br>사용자 인증 : Convolusion Neural Network 모델을 이용하여 해당 귀를 가진 사람의 신원을 파악합니다.</p>
-        <p><a href="https://www.froala.com">Learn More &gt;</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="fdb-block team-8" data-block-type="teams" data-id="24" draggable="true">
-  <div class="container">
-    <div class="row text-center justify-content-center">
-      <div class="col-8" id="team">
-        <h1>Our Amazing Team</h1>
-        <p class="text-h3">Team's Introduce</p>
-        <p class="text-h4">Solidium#2는 걸음걸이와 귀를 형성하는 복잡하고 다양한 범주 속 정보들의 패턴을 분석하고, 
-        <br>인공지능 학습을 토대로 실생활과 의료,범죄예방 분야 발전에 기여하는 데 힘쓰고 있습니다.  </p>
-      </div>
-    </div>
-
-    <div class="row-100"></div>
-
-    <div class="row justify-content-center text-left">
-      <div class="col-sm-6">
-        <div class="row align-items-center">
-          <div class="col-4">
-            <img alt="image" class="img-fluid" src="{% static "img/ys.png" %}">
-          </div>
-
-          <div class="col-8">
-            <h3><strong>오윤석</strong></h3>
-            <p class="text-h3">Team Leader&Project Manager</p>
-
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6">
-        <div class="row align-items-center">
-          <div class="col-4">
-            <img alt="image" class="img-fluid" src="{% static "img/dh.png" %}">
-          </div>
-
-          <div class="col-8">
-            <h3><strong>이동훈</strong></h3>
-            <p class="text-h3">Ears Analyst&Web Developer</p>
-
-            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row-70"></div>
-
-    <div class="row justify-content-center text-left">
-      <div class="col-sm-6">
-        <div class="row align-items-center">
-          <div class="col-4">
-            <img alt="image" class="img-fluid" src="{% static "img/hj.png" %}">
-          </div>
-
-          <div class="col-8">
-            <h3><strong>임혜진</strong></h3>
-            <p class="text-h3">Ears Analyst&Designer</p>
-
-            <p>One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6">
-        <div class="row align-items-center">
-          <div class="col-4">
-            <img alt="image" class="img-fluid" src="{% static "img/jh.png" %}">
-          </div>
-
-          <div class="col-8">
-            <h3><strong>손정효</strong></h3>
-            <p class="text-h3">Gait Analyst&Ear Developer</p>
-
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row-70"></div>
-
-    <div class="row justify-content-center text-left">
-      <div class="col-sm-6">
-        <div class="row align-items-center">
-          <div class="col-4">
-            <img alt="image" class="img-fluid" src="{% static "img/dj.png" %}">
-          </div>
-
-          <div class="col-8">
-            <h3><strong>이동준</strong></h3>
-            <p class="text-h3">Ears Analyst&Hardware Manager</p>
-
-            <p>One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6">
-        <div class="row align-items-center">
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{#<section class="fdb-block fp-active" data-block-type="features" data-id="14" draggable="true">#}
+{#  <div class="container">#}
+{#    <div class="row justify-content-center pb-5">#}
+{#      <div class="col-12 text-center" id="features">#}
+{#        <h1>Features</h1>#}
+{#      </div>#}
+{#    </div>#}
+{##}
+{#    <div class="row text-left align-items-center pt-5 pb-md-5">#}
+{#      <div class="col-4 col-md-5">#}
+{#        <img alt="image" class="img-fluid" src="https://cdn-images-1.medium.com/max/1200/1*oVTetBH6worv5grwvSFkxw.png">#}
+{#      </div>#}
+{##}
+{#      <div class="col-12 col-md-5 m-md-auto">#}
+{#        <h2><strong>Feature One</strong></h2>#}
+{#        <p class="text-h3">걸음걸이 인식은 걸음걸이를 촬영해 보폭과 실루엣, 신체 특징 등으로 사람의 걸음걸이 형태를 분석하고 특징을 추출해 사용자를 인증하는 방법입니다. <br><br>보행의 5개의 정적특징 : 어깨 너비, 엉덩이 너비, 골반 길이, 다리 길이, 각 신체 부분의 다른 신체 부분에 대한 비율 <br><br>보행의 5개의 동적특징 : 허벅지 사이의 각도 변화량, 상체와 골반 밑 부분의 각도 변화량, 허벅지와 종아리 사이의 각도 변화량 <br><br>위의 2가지의 분류 기법을 사용해서 신원을 파악합니다.</p>#}
+{#        <p><a href="https://www.froala.com">Learn More &gt;</a></p>#}
+{#      </div>#}
+{#    </div>#}
+{##}
+{#    <div class="row text-left align-items-center pt-5 pb-md-5">#}
+{#      <div class="col-4 col-md-5 m-md-auto order-md-5">#}
+{#        <img alt="image" class="img-fluid" src="http://3.bp.blogspot.com/-JhYfgS7dj0E/T1hYeT73fDI/AAAAAAAAAa4/XthIKIigXsc/s400/mod_ears.jpg">#}
+{#      </div>#}
+{##}
+{#      <div class="col-12 col-md-5">#}
+{#        <h2><strong>Feature Two</strong></h2>#}
+{#        <p class="text-h3">귀 인식은 귀를 촬영해 귀의 특징으로 사람의 귀 형태를 추출해 사용자를 인증하는 방법입니다.<br><br>귀 형태 추출 : 전체 영상 중 Haar Cascade Classifier로 귀 형태의 음영차를 이용해 귀 형태를 추출합니다. <br><br>사용자 인증 : Convolusion Neural Network 모델을 이용하여 해당 귀를 가진 사람의 신원을 파악합니다.</p>#}
+{#        <p><a href="https://www.froala.com">Learn More &gt;</a></p>#}
+{#      </div>#}
+{#    </div>#}
+{#  </div>#}
+{#</section>#}
+{#<section class="fdb-block team-8" data-block-type="teams" data-id="24" draggable="true">#}
+{#  <div class="container">#}
+{#    <div class="row text-center justify-content-center">#}
+{#      <div class="col-8" id="team">#}
+{#        <h1>Our Amazing Team</h1>#}
+{#        <p class="text-h3">Team's Introduce</p>#}
+{#        <p class="text-h4">Solidium#2는 걸음걸이와 귀를 형성하는 복잡하고 다양한 범주 속 정보들의 패턴을 분석하고,#}
+{#        <br>인공지능 학습을 토대로 실생활과 의료,범죄예방 분야 발전에 기여하는 데 힘쓰고 있습니다.  </p>#}
+{#      </div>#}
+{#    </div>#}
+{##}
+{#    <div class="row-100"></div>#}
+{##}
+{#    <div class="row justify-content-center text-left">#}
+{#      <div class="col-sm-6">#}
+{#        <div class="row align-items-center">#}
+{#          <div class="col-4">#}
+{#            <img alt="image" class="img-fluid" src="{% static "img/ys.png" %}">#}
+{#          </div>#}
+{##}
+{#          <div class="col-8">#}
+{#            <h3><strong>오윤석</strong></h3>#}
+{#            <p class="text-h3">Team Leader&Project Manager</p>#}
+{##}
+{#            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{##}
+{#      <div class="col-sm-6">#}
+{#        <div class="row align-items-center">#}
+{#          <div class="col-4">#}
+{#            <img alt="image" class="img-fluid" src="{% static "img/dh.png" %}">#}
+{#          </div>#}
+{##}
+{#          <div class="col-8">#}
+{#            <h3><strong>이동훈</strong></h3>#}
+{#            <p class="text-h3">Ears Analyst&Web Developer</p>#}
+{##}
+{#            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{#    </div>#}
+{##}
+{#    <div class="row-70"></div>#}
+{##}
+{#    <div class="row justify-content-center text-left">#}
+{#      <div class="col-sm-6">#}
+{#        <div class="row align-items-center">#}
+{#          <div class="col-4">#}
+{#            <img alt="image" class="img-fluid" src="{% static "img/hj.png" %}">#}
+{#          </div>#}
+{##}
+{#          <div class="col-8">#}
+{#            <h3><strong>임혜진</strong></h3>#}
+{#            <p class="text-h3">Ears Analyst&Designer</p>#}
+{##}
+{#            <p>One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{##}
+{#      <div class="col-sm-6">#}
+{#        <div class="row align-items-center">#}
+{#          <div class="col-4">#}
+{#            <img alt="image" class="img-fluid" src="{% static "img/jh.png" %}">#}
+{#          </div>#}
+{##}
+{#          <div class="col-8">#}
+{#            <h3><strong>손정효</strong></h3>#}
+{#            <p class="text-h3">Gait Analyst&Ear Developer</p>#}
+{##}
+{#            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{#    </div>#}
+{#    <div class="row-70"></div>#}
+{##}
+{#    <div class="row justify-content-center text-left">#}
+{#      <div class="col-sm-6">#}
+{#        <div class="row align-items-center">#}
+{#          <div class="col-4">#}
+{#            <img alt="image" class="img-fluid" src="{% static "img/dj.png" %}">#}
+{#          </div>#}
+{##}
+{#          <div class="col-8">#}
+{#            <h3><strong>이동준</strong></h3>#}
+{#            <p class="text-h3">Ears Analyst&Hardware Manager</p>#}
+{##}
+{#            <p>One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{##}
+{#      <div class="col-sm-6">#}
+{#        <div class="row align-items-center">#}
+{##}
+{#        </div>#}
+{#      </div>#}
+{#    </div>#}
+{#  </div>#}
+{#</section>#}
 <footer class="fdb-block footer-small" data-block-type="footers" data-id="15">
   <div class="container">
     <div class="row text-center align-items-center">
       <div class="col-12 col-lg-2 text-lg-left">
-        <img alt="image" src="{% static "img/logo3.png" %}" height="40">
+        <img alt="image" src="{% static "img/aileader.png" %}" height="40">
       </div>
 
       <div class="col mt-4 mt-lg-0 text-center">
@@ -513,7 +544,7 @@ It recognizes the identity of a person who is registered only by gait and ears, 
 
     <div class="row mt-4">
       <div class="col text-center">
-        © 2017 Solidium#2. All Rights Reserved
+        © 2019 AI Leader. All Rights Reserved
       </div>
     </div>
   </div>

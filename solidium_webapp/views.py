@@ -25,8 +25,10 @@ from django.contrib.auth.models import User
 import glob
 import shutil
 from collections import OrderedDict
-
+import ast
 from solidium_webapp import fusioncharts
+
+
 
 class MainView(View):
     def get(self,request,*args,**kwargs):
@@ -55,12 +57,28 @@ class MainView(View):
         elif request.POST['func']=='signup':
             #print(request.POST['username'],request.POST['email'],request.POST['password'])
             form = UserForm(request.POST)
-            print(form)
+
+            face_register_script_path = './solidium_webapp/openface/face_register.py'
+            my_env = {**os.environ,
+                      'PATH': '/usr/sbin:/sbin:/Users/donghoon:/Users/donghoon/anaconda3/envs/tf-pose-estimation/bin:' +
+                              os.environ['PATH']}
+
+
+
             if form.is_valid():
                 new_user = User.objects.create_user(**form.cleaned_data)
+                # print(str(new_user))
+                proc = subprocess.Popen(['python3', face_register_script_path,str(new_user)], stdout=subprocess.PIPE, env=my_env)
+                result = []
+                while proc.poll() is None:
+                    output = proc.stdout.readline()
+                    result.append((output).decode())
+                print(result)
+
                 return render(request,'main.html')
             else :
                 return render(request,'main.html')
+
         else:
             return render(request,'main.html')
 class StartView(View):
@@ -90,43 +108,62 @@ class RunView(View):
         #if not request.session.get('start_complete',False):
         #    raise PermissionDenied
         request.session['start_complete']=False
-        my_env = { **os.environ, 'PATH': '/usr/sbin:/sbin:' + os.environ['PATH']}
+
+        my_env = { **os.environ, 'PATH': '/usr/sbin:/sbin:/Users/donghoon:/Users/donghoon/anaconda3/envs/tf-pose-estimation/bin:' + os.environ['PATH']}
         # print(my_env)
-        sound_script_path = "./solidium_webapp/sound/start.mpeg"
-        ear_script_path = "./solidium_webapp/ear_app/ear_test_change.py"
+        sound_script_path = "./solidium_webapp/sound/guide.mpeg"
+        # face_script_path = './solidium_webapp/deepface/face_test.py'
+        openface_script_path = './solidium_webapp/openface/open_face.py'
+        # face_detect_script_path = './solidium_webapp/openface/face_detector.py'
+        # ear_script_path = "./solidium_webapp/ear_app/ear_test_change.py"
         call(["mplayer",sound_script_path])
-        proc = subprocess.Popen(['python3', ear_script_path], stdout=subprocess.PIPE, env=my_env)
+        proc = subprocess.Popen(['python3', openface_script_path], stdout=subprocess.PIPE, env=my_env)
+        # proc = subprocess.Popen(['python3', face_script_path], stdout=subprocess.PIPE, env=my_env)
         result = []
+        predict =''
+        min_dist = 10.0
+        max_dist = 0.0
+        mysim=0.0
+
         while proc.poll() is None:
             output = proc.stdout.readline()
             result.append((output).decode())
-        for i in result:
-            if "이동훈" in i:
-                oldstr = result[2]
-                newstr = oldstr.replace("\n", "")
-                print("예측 횟수 : "+ newstr)
-                dic = ast.literal_eval(newstr)
-                dic_max = max(dic.values())
-                predict =""
-                for key,value in dic.items():
-                    request.session[key]=value
-                    if dic_max==value:
-                        predict=key
-                print("예측한 사람 : "+predict)
-                print("로그인된 정보 : "+str(request.user))
+        print(result)
+        for i in range(0,len(result)):
+            j = result[i].replace("\n", "")
+            if i==0:
+                result_dict=ast.literal_eval(j)
+                for key,value in result_dict.items():
+                    print(value)
+                    if key==str(request.user):
+                        mysim = value
+                    if max_dist<value:
+                        max_dist=value
+
+                    if min_dist>value:
+                        min_dist=value
+
+
+            if i==1:
+                predict=j
+        print(mysim)
+        print(min_dist,max_dist)
+        similiarity=(1-(float((mysim+1e-3)-min_dist)/float(max_dist-min_dist)))*100
+
+
         if str(request.user)=="AnonymousUser":
             needuid="needuid"
-            return render(request,'run.html',{'predict': predict, 'newstr': newstr, 'needuid': needuid})
+            return render(request,'run.html',{'predict': predict, 'similiarity':similiarity, 'needuid': needuid})
         elif predict==str(request.user):
             sound_script_path = "./solidium_webapp/sound/authentication_success.mpeg"
             call(["mplayer", sound_script_path])
             Authentication="Authentication"
-            return render(request, 'run.html', {'predict': predict, 'newstr': newstr, 'Authentication': Authentication})
+            return render(request, 'run.html', {'predict': predict, 'similiarity':similiarity, 'Authentication': Authentication})
         else:
             sound_script_path = "./solidium_webapp/sound/authentication_fail.mpeg"
             call(["mplayer", sound_script_path])
             unauthorized = "unauthorized"
-            return render(request, 'run.html', {'predict': predict, 'newstr': newstr, 'unauthorized': unauthorized})
+            return render(request, 'run.html', {'predict': predict,'similiarity':similiarity, 'unauthorized': unauthorized})
 
 
 

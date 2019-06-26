@@ -13,19 +13,20 @@
     <div class="container">
     <nav class="navbar">
       <a href="http://192.168.0.56:8009/#home">
-          <img src="{% static "img/logo3.png" %}" height="50" alt="image">
+          <img src="{% static "img/aileader.png" %}" height="50" alt="image">
         </a>
     </nav>
   </div>
   <div class="container">
     <div class="row">
       <div class="col text-center">
-        <h1>Step1</h1>
+        <h2>수강생분께서는 인증시작 버튼을 누른 후 화면을 응시해 주시기 바랍니다.</h2>
         <form id="submitform" , method="POST">
         {% csrf_token %}
             <button class="btn" type="submit">인증 시작</button>
         </form>
-        <img alt="image" class="img-fluid mt-5" src="https://com-ptboard-school-images-public.s3.amazonaws.com/38cb547f-c3bb-4298-8659-24edc862aaea/e3ee66b1-e4a7-4302-aca2-492b9a5f4867">
+{#        <img alt="image" class="img-fluid mt-5" src="https://com-ptboard-school-images-public.s3.amazonaws.com/38cb547f-c3bb-4298-8659-24edc862aaea/e3ee66b1-e4a7-4302-aca2-492b9a5f4867">#}
+        <img alt="image" class="img-fluid mt-5" src="{% static "img/exam.png" %}">
       </div>
     </div>
   </div>
@@ -34,11 +35,11 @@
   <div class="container">
     <div class="row text-center align-items-center">
       <div class="col-12 col-sm-6 col-md-4 text-sm-left">
-        <img alt="image" src="{% static "img/logo3.png" %}" height="30">
+        <img alt="image" src="{% static "img/aileader.png" %}" height="30">
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 mt-4 mt-sm-0 text-center text-sm-right text-md-center">
-        © 2018 Solidium#2
+        © 2019 Sejong 6th SW Hackathon
       </div>
 
       <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">

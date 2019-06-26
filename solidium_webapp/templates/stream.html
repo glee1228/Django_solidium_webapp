@@ -13,49 +13,57 @@
     <div class="container">
     <nav class="navbar">
       <a href="http://localhost:8009/#home">
-          <img src="{% static "img/logo3.png" %}" height="50" alt="image">
+          <img src="{% static "img/aileader.png" %}" height="50" alt="image">
         </a>
-        <li class="nav-item">
-            <a class="nav-item">{{ user.username }} 님 환영합니다.</a>
-        </li>
+
     </nav>
 
   </div>
 </section>
-<section class="fdb-block fp-active" style="padding-top:30px; padding-bottom:10px;" data-block-type="contents" data-id="1" draggable="true">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-12">
-        <h1>Step2</h1>
-           <form action="/stream/", method="POST">
+<section class="fdb-block">
+      <div class="container">
+        <div class="row text-center">
+
+          <div class="col-12 col-sm-6 col-md-9 pt-5 pt-md-0">
+            <img alt="image" src="{% static "img/ojsystem.png" %}" width="100%" height="100%">
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 pt-5 pt-md-0">
+{#            <img alt="image" src="{% url 'streaming' %}" width="200" height="200">#}
+              <img alt="image" src="{% static 'query/query.jpg'%}">
+            <h3><strong>{{ user.username }} 님 환영합니다.</strong></h3>
+            <p class="mt-3"><form action="/stream/", method="POST">
         {% csrf_token %}
-            <button class="btn" type="submit">결과 보기</button>
-        </form>
+{#            <button class="btn" type="submit">결과 보기</button>#}
+        </form></p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="row text-center pt-3 pt-xl-5">
-      <div class="col-12 col-sm-10 m-auto m-md-0 col-md-6">
-       <img src="{% url 'streaming' %}" width="500" height="400">
-        <p class="text-h3">Ear Recognition</p>
-      </div>
-
-      <div class="col-12 col-sm-10 m-auto m-md-0 col-md-6 pt-5 pt-md-0">
-        <img src="{% url 'streaming' %}" width="500" height="400">
-        <p class="text-h3">Gait Recognition</p>
-      </div>
-    </div>
-  </div>
-</section>
+{#<section class="fdb-block fp-active" style="padding-top:30px; padding-bottom:10px;" data-block-type="contents" data-id="1" draggable="true">#}
+{#  <div class="container">#}
+{##}
+{##}
+{#    <div class="row text-center pt-3 pt-xl-5">#}
+{#      <div class="col-12 col-sm-10 m-auto m-md-0 col-md-6">#}
+{#       <img src="{% url 'streaming' %}" width="1000" height="600">#}
+{#        <p class="text-h3"></p>#}
+{#      </div>#}
+{##}
+{##}
+{#    </div>#}
+{#  </div>#}
+{#</section>#}
 <footer class="fdb-block footer-small" data-block-type="footers" data-id="5">
   <div class="container">
     <div class="row text-center align-items-center">
       <div class="col-12 col-sm-6 col-md-4 text-sm-left">
-        <img alt="image" src="{% static "img/logo3.png" %}" height="30">
+        <img alt="image" src="{% static "img/aileader.png" %}" height="30">
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 mt-4 mt-sm-0 text-center text-sm-right text-md-center">
-        © 2018 Solidium#2
+        © 2019 Sejong 6th SW Hackathon
       </div>
 
       <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">

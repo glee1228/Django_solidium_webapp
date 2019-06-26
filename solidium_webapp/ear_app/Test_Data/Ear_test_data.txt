@@ -1,6 +1,0 @@
-./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0004.jpg.png
-./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0005.jpg.png
-./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0003.jpg.png
-./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0002.jpg.png
-./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0000.jpg.png
-./solidium_webapp/ear_app/Ear_image/Test/After_preprocess/0001.jpg.png

@@ -33,18 +33,19 @@ $(document).ajaxStart(function(){
           {% if Authentication %}
             <p class="text-h3">인증 성공<br></p>
             <h5>잠시 후 결과 화면으로 이동합니다.</h5>
-            <p class="text-h4">로그인 계정과 사용자 보행,귀 인식 정보가 일치 합니다.</p>
+            <p class="text-h4">로그인 계정과 사용자 얼굴 특징 정보가 일치 합니다.</p>
             {% endif %}
           {% if unauthorized %}
             <p>인증 실패<br></p>
             <h5>잠시 후 홈 화면으로 이동합니다.</h5>
-            <p class="text-h5">로그인 계정과 사용자 보행,귀 인식 정보가 일치 하지 않습니다.</p>
+            <p class="text-h5">로그인 계정과 사용자 얼굴 특징 정보가 일치 하지 않습니다.</p>
             {% endif %}
         {% if needuid %}
             <p class="text-h3">1차 로그인 정보 필요<br></p>
             <h5>잠시 후 홈 화면으로 이동합니다.</h5>
             <p class="text-h4">계정 로그인을 하지 않았습니다.</p>
             {% endif %}
+          <p class="text-h4">현재 {{ similiarity }}% 일치하는 것으로 확인됩니다. </p>
         {% if Authentication %}
         <form id="submitform" , method="POST">
         {% csrf_token %}
