@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fa7534-94dd-4ba0-a3da-46f396c86083" name="Default Changelist" comment="uploadImage page : /">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/COPYRIGHT" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/COPYRIGHT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/FAQ.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/FAQ.html" afterDir="false" />
@@ -55,8 +54,6 @@
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm.h" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/tools/README" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/tools/README" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/tools/easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/tools/easy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/openface/query/query.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/openface/query/query.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/static/query/query.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/static/query/query.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +90,7 @@
     <session id="1582599353">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
@@ -586,7 +583,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32932693" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4982538" visible="true" weight="0.21514423" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4982538" weight="0.21514423" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39903846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
