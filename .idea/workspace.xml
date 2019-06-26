@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fa7534-94dd-4ba0-a3da-46f396c86083" name="Default Changelist" comment="uploadImage page : /">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_test_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_app/Ear_test_dataset.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_app/Test_Data/Ear_test_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_app/Test_Data/Ear_test_data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/COPYRIGHT" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/COPYRIGHT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/FAQ.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/FAQ.html" afterDir="false" />
@@ -58,11 +55,8 @@
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm.h" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/svm.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/tools/README" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/tools/README" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/tools/easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/ear_gait_app/libsvm/tools/easy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/run.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/start.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/templates/stream.html" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/templates/stream.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solidium_webapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/openface/query/query.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/openface/query/query.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solidium_webapp/static/query/query.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/solidium_webapp/static/query/query.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +112,7 @@
           <entry key="gif" value="1" />
           <entry key="gitignore" value="6" />
           <entry key="html" value="123" />
-          <entry key="jpg" value="178" />
+          <entry key="jpg" value="179" />
           <entry key="js" value="2" />
           <entry key="png" value="132" />
           <entry key="pt" value="3" />
@@ -133,7 +127,7 @@
           <entry key="CSV" value="6" />
           <entry key="Chameleon" value="3" />
           <entry key="HTML" value="123" />
-          <entry key="Image" value="316" />
+          <entry key="Image" value="317" />
           <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="Python" value="305" />
@@ -177,7 +171,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solidium_webapp/openface/open_face.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1630">
@@ -189,6 +183,11 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/solidium_webapp/static/query/query.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solidium_webapp/openface/query/query.jpg">
           <provider selected="true" editor-type-id="images" />
@@ -198,7 +197,7 @@
         <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="197" column="9" lean-forward="true" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
+              <caret line="197" column="9" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -211,15 +210,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solidium_webapp/openface/images/kmw.jpg">
           <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/run.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -410,6 +400,13 @@
               <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_solidium_webapp" type="462c0819:PsiDirectoryNode" />
               <item name="solidium_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="query" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_solidium_webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_solidium_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="solidium_webapp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -582,13 +579,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="30" width="1440" height="947" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992343" visible="true" weight="0.22103004" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992343" visible="true" weight="0.22103004" />
       <window_info id="Structure" order="1" sideWeight="0.5007657" side_tool="true" weight="0.22103004" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32932693" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4982538" visible="true" weight="0.21514423" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4982538" visible="true" weight="0.21514423" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39903846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -834,9 +832,6 @@
     <entry file="file://$PROJECT_DIR$/solidium_site/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/solidium_webapp/static/query/query.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/solidium_webapp/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -904,7 +899,7 @@
     <entry file="file://$PROJECT_DIR$/solidium_webapp/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="197" column="9" lean-forward="true" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
+          <caret line="197" column="9" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -917,6 +912,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solidium_webapp/static/query/query.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
