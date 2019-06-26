@@ -1,83 +1,32 @@
-## 웹 애플리케이션(Web Application) 
+# Prevent Cheating AI
+### by TEAM AI-Leader
 
-* 기능 소개
+시험 부정행위 방지 인공지능 UI 소개 
 
-1. 1차 로그인, 회원가입
+### **Index Page**
 
-2. 걸음걸이 귀 인식 
+<img width="1792" alt="main" src="https://user-images.githubusercontent.com/26589942/60148495-4bc8ef80-980c-11e9-8f84-4b937e20ab5f.png">
 
-3. 2차 로그인
+### **Register Page**
 
-4. 인식 결과와 불일치 시, 인증 불가
+<img width="1792" alt="register" src="https://user-images.githubusercontent.com/26589942/60178517-aedf7400-9856-11e9-8a59-a6d13deadc0f.png">
 
-5. 인식 결과와 일치 시, feature을 담은 영상과 인식 최종 결과 차트로 열람 가능
+### **ID login Page**
 
-6. 모든 페이지는 그 이전페이지에서만 순차적으로 접근 가능함(보안)
+<img width="1792" alt="login" src="https://user-images.githubusercontent.com/26589942/60178602-e77f4d80-9856-11e9-9692-c1193b42e721.png">
 
- 
+### **Face Login Start Page**
 
-* 기술 소개
-  * Django(Framework)
-    *  Solidium_webapp
-      * Ear_gait_app(보행,귀 전체 application)
-        * Body_Feature_Extraction.py(tf-pose-estimation 오픈소스를 이용해 신체의 10개 특징좌표 추출)
-        * Update_haarcascade_leftear.xml(Haar Algorithm 을 Adaboost로 학습한 xml)
-        * Ear_detector.py(Opencv3.2, 귀를 검출하고 저장하는 python코드)
-      * Urls
-        * Main
-          * Main.html 페이지 url
-        * Start
-          * 테스트 시작하는 start.html 페이지 url
-        * Stream
-          *  Stream.html 페이지 url
-        * Streaming1
-          *  귀 영상 스트리밍 url
-        * Streaming2
-          * 걸음걸이 영상 스트리밍 url
-        * Result
-          * 차트 및 그래프 시각화 url
-      * Views
-        *  MainView
-          * Get
-          *  Post
-            *  로그인
-            * 로그인 세션 생성
-            * 회원가입
-        * StartView
-          * Get
-          * Post
-            * 이미지 데이터 삭제
-        * RunView
-          * Get
-            * 안내 Sound 재생
-            * 귀, 보행 인식 코드 재생
-            * 인식 결과 가져오기
-            * 1차 로그인 여부 확인 -> 인식 결과와 1차로그인 정보 일치 여부 확인
-          * Post
-            * 2차 인증 완료 시, StreamView로 이동
-            * 2차 인증 실패 시, MainView로 이동
-        * StreamView
-          * Get
-            * 귀를 검출한 이미지를 담은 영상 Streaming
-            * 걸음걸이 feature 11개를 입힌 영상 Streaming
-          * Post
-        * ResultView
-          * Get
-            * FusionChart로 인식 결과 그래프로 시각화
-          * Post
-      * Templates
-      * Main.html
+<img width="1792" alt="start" src="https://user-images.githubusercontent.com/26589942/60148449-13c1ac80-980c-11e9-8d5f-adff0289cd9c.png">
 
-![img](file:////Users/donghoon/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png)![img](file:////Users/donghoon/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image002.png)![img](file:////Users/donghoon/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image003.png)![img](file:////Users/donghoon/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image004.png)
+### **Face Detection**
 
-![img](file:////Users/donghoon/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image005.png)![img](file:////Users/donghoon/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image006.png)![img](file:////Users/donghoon/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image007.png)![img](file:////Users/donghoon/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image008.png)
+<img width="1364" alt="run" src="https://user-images.githubusercontent.com/26589942/60178221-ef8abd80-9855-11e9-9cf6-ab8eb05d9aeb.png">
 
-l  Start.html![img](file:////Users/donghoon/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image010.png)
+### **Result Page(Output similarity with user's saved image)**
 
-l  Run.html![img](file:////Users/donghoon/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image011.png)
+<img width="1792" alt="accept" src="https://user-images.githubusercontent.com/26589942/60178227-f31e4480-9855-11e9-8e4e-c84d596b3c83.png">
 
-l  Stream.html![img](file:////Users/donghoon/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image013.png)
+### **Test page**
 
-l  Result.html![img](file:////Users/donghoon/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image015.png)
-
- 
+<img width="1792" alt="result2" src="https://user-images.githubusercontent.com/26589942/60178232-f5809e80-9855-11e9-9d47-af7e8bf56b89.png">
