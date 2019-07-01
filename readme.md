@@ -1,4 +1,4 @@
-# Prevent Cheating AI
+# AI to prevent cheating
 ### by TEAM AI-Leader
 
 시험 부정행위 방지 인공지능 UI 소개 
